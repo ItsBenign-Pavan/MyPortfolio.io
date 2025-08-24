@@ -1,2 +1,0 @@
-# MyPortfolio.io
-My Portfolio

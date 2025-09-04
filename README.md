@@ -1,3 +1,3 @@
 # MyPortfolio.io
 
-Visit Portfolio: https://pavankhots17.github.io/MyPortfolio.io/
+Visit Portfolio: https://itsbenign-pavan.github.io/MyPortfolio.io/

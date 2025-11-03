@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/additional_css.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+        <!-- Floating Hire Me Button -->
+        <a href="mailto:khotpavankumar27@gmail.com" target="_blank" class="floating-hire-btn">
+        <span>💼 Hire Me</span>
+        </a>
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
@@ -55,41 +61,114 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Pavankumar Khot</span>
-            </h1>
-            <!-- <p class="header-subtitle">Software developement enthusiast</p>             -->
+                <span class="up">Hi!</span>
+                <span class="down">I'm Pavan</span>
+           </h1>
 
-            <a href="https://github.com/PavanKhotS17#projects" target="_blank" id="about"><button class="btn btn-primary">Visit My Work Samples </button></a>
-        </div>              
-    </header><!-- end of page header -->
+        <div class="typing-container">
+        <p class="typing-text">
+        Scroll down, No phishing here 😉
+        </p>      
+    </header ><!-- end of page header -->
 
     <!-- about section -->
     <section class="section pt-0" >
         <!-- container -->
-        <div class="container text-center">
+        <div class="container text-center" id="about">
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/portfolioImage.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/portfolioImage.png" class="about-img">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p style="text-align: justify;">
-                        Hello 👋, <br>
-                        I'm looking for a position where I can use my knowledge and experience to consult with and work with numerous sectors to provide them with seamless solutions that will allow me to advance professionally while also being flexible, creative, and imaginative.              
-                        <br><br>
-                        As a skilled intern with more than three internships under my experience in the fields of cloud, software development, data analysis, and web development, I'm confident that I am the best candidate for the open position at your company.
-                        <br><br>
-                        I'm very enthusiast person to learn new things through practicing itself. I will try my best to make your task as efficient as possible by my strong mindset and diligent nature.
+                        Hello 👋, <br><br>
+I am a cybersecurity professional specializing in endpoint security and threat hunting. With hands-on experience in threat detection, incident response, and cloud security, I help organizations identify, analyze, and mitigate cyber threats efficiently. <br><br>
+
+Passionate about staying ahead of emerging threats, I combine technical expertise with a proactive mindset to strengthen security operations and protect critical assets. I thrive in dynamic environments and continuously seek opportunities to learn and innovate in cybersecurity.
                     </p>
-                    <a href="MyResume- v6.1.pdf" download="Pavankumar's CV"><button class="btn-rounded btn btn-outline-primary mt-4"> Download CV</button></a> &nbsp  <a href="MyCoverLetter.pdf" download="Pavankumar's CL"><button class="btn-rounded btn btn-outline-primary mt-4"></i> Download Cover Letter</button></a>
-                </div>              
-            </div><!-- end of about wrapper -->              
-        </div><!-- end of container -->
+                    <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" download="Pavankumar's CV"><button class="btn-rounded btn btn-outline-primary mt-4"> Download CV</button></a> 
+                    <!-- &nbsp  <a href="MyCoverLetter.pdf" download="Pavankumar's CL"><button class="btn-rounded btn btn-outline-primary mt-4"></i> Download Cover Letter</button></a> -->
+                </div>
+            </div><!-- end of about wrapper -->    
+
+             </div>
+
+        </div style ="width = auto"><!-- end of container -->
+
+                <!-- Profile badges ................................................................................. -->
+
+                <section class="cyber-profiles" id="profiles">
+                <div class="container">
+                    <div class="profile-grid">
+                    
+                    <!-- GitHub -->
+                    <div class="profile-card" id="github-card">
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="profile-card">
+                        <div class="linkedin-badge">
+                        <div class="badge-base LI-profile-badge"
+                            data-locale="en_US" data-size="medium" data-theme="light"
+                            data-type="HORIZONTAL" data-vanity="pavankumar-khot-91a95b209"
+                            data-version="v1">
+                            <a class="badge-base__link LI-simple-link"
+                            href="https://in.linkedin.com/in/pavankumar-khot-91a95b209?trk=profile-badge">
+                            </a>
+                        </div>
+                        </div>
+                        <a href="https://in.linkedin.com/in/pavankumar-khot-91a95b209" target="_blank" class="profile-link">View LinkedIn</a>
+                    </div>
+
+                    <!-- TryHackMe -->
+                    <div class="profile-card tryhackme-card">
+                        <div class="tryhackme-frame-container">
+                        <iframe 
+                            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4452694"
+                            loading="lazy"
+                            class="badge-frame"
+                            scrolling="no">
+                        </iframe>
+                        </div>
+                        <p class="profile-desc">
+                        Hands-on threat hunting, red teaming, and cyber lab adventures to level up my defense skills.
+                        </p>
+                        <a href="https://tryhackme.com/p/ItsBenign" target="_blank" class="profile-link">View TryHackMe</a>
+                    </div>
+
+                    </div>
+                </div>
+                </section>
+
+                <!-- LinkedIn Badge Script -->
+                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+                <!-- GitHub Data Fetch -->
+                <script>
+                fetch('https://api.github.com/users/ItsBenign-Pavan')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('github-card').innerHTML += `
+                    <img src="${data.avatar_url}" width="90" style="border-radius:50%; margin-top:10px;">
+                    <h4 style="margin:8px 0;">${data.name}</h4>
+                    <p class="profile-desc">Open-source experiments, side projects, and automation tools I craft in my free time.</p>
+                    <p>Public Repos: ${data.public_repos}</p>
+                    <a href="${data.html_url}" target="_blank" class="profile-link">View GitHub</a>
+                    `;
+                });
+                </script>
+
+                <!-- Font Awesome -->
+                <script src="https://kit.fontawesome.com/a2b5e6f3c1.js" crossorigin="anonymous"></script>
+
+                <!-- Profile badges ..................................................................................... -->
+
     </section> <!-- end of about section --> <hr>
 
+    
     <!-- service section -->
     <section class="section" id="skills">
         <div class="container text-center">
@@ -100,36 +179,48 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/aws.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Amazon Web Services</h6>
-                            <p class="subtitle">AWS S3 · Amazon EC2 · Virtual Private Cloud (VPC) · Terraform Scripting · AWS IAM · Database service · AWS Security</p>
+                            <img src="assets/imgs/networkfundamentals.svg" class="icon">
+                            <h6 class="title">Networking Nerd</h6>
+                            <p class="subtitle" style="justify-self:center;">Completing the 'Network Fundamentals' module <br><br> <a href="https://tryhackme.com/ItsBenign/badges/network-fundamentals" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
+                                onmouseover="this.style.backgroundColor='#0056b3';" 
+                                onmouseout="this.style.backgroundColor='#007BFF';"> Verify</a>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/java.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Java</h6> 
-                            <p class="subtitle">Java Programming · Java Server Pages (JSP) · Servlets · Object Oriented Programming in Java · DSA in Java </p>
+                            <img src="assets/imgs/linux.svg" class="icon">
+                            <h6 class="title">Linux Fundamentals</h6> 
+                            <p class="subtitle" style="justify-self:center;">Being competent in Linux <br><br> <a href="https://tryhackme.com/ItsBenign/badges/terminaled" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
+                                onmouseover="this.style.backgroundColor='#0056b3';" 
+                                onmouseout="this.style.backgroundColor='#007BFF';"> Verify</a>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/mysql.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">MySQL</h6>
-                            <p class="subtitle">DDL commands · DCL commands · DML commands · Joins · RDBMS · ER Model </p>
+                            <img src="assets/imgs/metasploit.svg" class="icon">
+                            <h6 class="title">Metasploitable</h6> 
+                            <p class="subtitle" style="justify-self:center;">Contains the knowledge to use Metasploit <br><br> <a href="https://tryhackme.com/ItsBenign/badges/metasploitable" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
+                                onmouseover="this.style.backgroundColor='#0056b3';" 
+                                onmouseout="this.style.backgroundColor='#007BFF';"> Verify</a>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/htmlcssjs.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">HTML, CSS and JavaScript</h6>
-                            <p class="subtitle"> HTML · CSS · JS · ReactJS · NodeJS · Bootstrap · Dynamic web design · Canva</p>
+                            <img src="assets/imgs/blue.svg" class="icon">
+                            <h6 class="title">Blue</h6> 
+                            <p class="subtitle" style="justify-self:center;">Hacking into Windows via EternalBlue <br><br> <a href="https://tryhackme.com/ItsBenign/badges/blue" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #007BFF; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
+                                onmouseover="this.style.backgroundColor='#0056b3';" 
+                                onmouseout="this.style.backgroundColor='#007BFF';"> Verify</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -141,7 +232,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/python.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="assets/imgs/python.jpg" class="icon">
                             <h6 class="title">Python</h6>
                             <p class="subtitle">Python Programming · Computer Vision · Machine Learning · Streamlit · Data Analysis · Data Visualization</p>
                         </div>
@@ -150,7 +241,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/cloud.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="assets/imgs/cloud.png" class="icon">
                             <h6 class="title">Cloud computing</h6>
                             <p class="subtitle">Cloud Deployment Model · Cloud Service Model · Global Infrastructure (AWS, Azure and GCP) </p>
                         </div>
@@ -159,7 +250,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/terraform.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="assets/imgs/terraform.png" class="icon">
                             <h6 class="title">Terraform</h6>
                             <p class="subtitle">Terraform Scripting for AWS services: AWS EC2, AWS VPC, AWS S3, AWS IAM, AWS database service</p>
                         </div>
@@ -168,7 +259,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/git.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <img src="assets/imgs/git.png" class="icon">
                             <h6 class="title">Git</h6>
                             <p class="subtitle"> Basic Commands · Version Control · Terminal Commands </p>
                         </div>
@@ -180,276 +271,160 @@
 
     <!-- portfolio section -->
     <section class="section" id="workex">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Work experience</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="https://drive.google.com/file/d/1BuuEvILN4q2Gpucfhxnr4Qx6EuJJOdfP/view?usp=sharing" target="_blank" class="portfolio-card">
-                        <img src="assets/imgs/cloudaws.png" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Cloud Intern</h5>
-                                <p class="font-weight-normal">At LTIMindtree (Ignite'23 Program)</p> <br>
-                                <p> <b>Duration:</b> Feb 2023 - May 2023 (4 Months)</p>
-                                <p> <b>Location:</b> Remote</p>
-                                <p style="padding: 10px;"> <b>Skills:</b>  Terraform · Amazon Web Services (AWS) · NoSQL · MongoDB · Web Services · Operating Systems · linux Bash · Powershell · SQL · HTML ·  JavaScript · RDBMS · Java</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://drive.google.com/file/d/1QhoC3HlA4BIfjdpiKy2KOOFU4uID8VXJ/view?usp=sharing" target="_blank" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/sd.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Software Developer Intern</h5>
-                                <p class="font-weight-normal">At Kentropy Technologies Pvt. Ltd.</p><br>
-                                <p> <b>Duration:</b> May 2022 - Sep 2023 (5 Months)</p>
-                                <p> <b>Location:</b> Remote </p>
-                                <p style="padding: 10px;"> <b>Skills:</b> Front-End Development · Git · Selenium Testing · JavaScript · Java Servlets · Java Server Pages (JSP) · JSON · Dynamic Websites</p>
-                            </span>                         
-                        </span>                         
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://drive.google.com/file/d/1iZnnSCdkbZUwIfWYX_Q5mbxz0F8pIc-P/view?usp=sharing" target="_blank" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/DA.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Data Analyst Intern</h5>
-                                <p class="font-weight-normal">At DevTown (ShapeAI)</p><br>
-                                <p> <b>Duration:</b> Jul 2021 - Oct 2021  (4 Months)</p>
-                                <p> <b>Location:</b> Remote </p>
-                                <p style="padding: 10px;"> <b>Skills:</b> SQL · OpenCV · Python (Programming Language) · Machine Learning</p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section --><hr>
+    <div class="container text-center">
+        <p class="section-subtitle">What I Did ?</p>
+        <h6 class="section-title mb-6">Professional Work Experience</h6>
+
+        <div class="timeline-container">
+        
+        <!-- Current Role -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+            <h4 class="timeline-role">Endpoint Security Engineer (Threat Hunter)</h4>
+            <p class="timeline-company">LTIMindtree Limited — <i>Client: Microsoft DEX-E (Defender Experts for Endpoint)</i></p>
+            <p class="timeline-duration"><b>2024 – Present</b> (2 Years)</p>
+            <p class="timeline-desc">
+                Responsible for triaging endpoint security incidents, escalating high-severity threats,
+                and collaborating with Microsoft’s Defender Experts to enhance threat detection and response efficiency.
+            </p>
+            </div>
+        </div>
+
+        <!-- Previous Role 1 -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+            <h4 class="timeline-role">Cloud Intern</h4>
+            <p class="timeline-company">LTIMindtree (Ignite'23 Program)</p>
+            <p class="timeline-duration"><b>Feb 2023 – May 2023</b> (4 Months)</p>
+            <p class="timeline-desc">
+                Gained hands-on experience in Terraform, AWS Cloud Services, and automation scripting while contributing to 
+                internal cloud deployment and configuration projects.
+            </p>
+            </div>
+        </div>
+
+        <!-- Previous Role 2 -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+            <h4 class="timeline-role">Software Developer Intern</h4>
+            <p class="timeline-company">Kentropy Technologies Pvt. Ltd.</p>
+            <p class="timeline-duration"><b>May 2022 – Sep 2022</b> (8 Months)</p>
+            <p class="timeline-desc">
+                Developed dynamic web components using JavaScript and JSP; collaborated with the QA team 
+                for Selenium testing and version control via Git.
+            </p>
+            </div>
+        </div>
+
+        <!-- Previous Role 3 -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+            <h4 class="timeline-role">Data Analyst Intern</h4>
+            <p class="timeline-company">DevTown (ShapeAI)</p>
+            <p class="timeline-duration"><b>Jul 2021 – Oct 2021</b> (3 Months)</p>
+            <p class="timeline-desc">
+                Worked on data visualization and machine learning tasks using Python, Pandas, and OpenCV 
+                to analyze real-world datasets and generate actionable insights.
+            </p>
+            </div>
+        </div>
+
+        </div><!-- end of timeline container -->
+    </div><!-- end of container -->
+    </section>
+    <hr>
 
     <!-- pricing section -->
     <section class="section" id="projects">
-        <div class="container text-center">
-            <p class="section-subtitle">Where did I use my skill?</p>
-            <h6 class="section-title mb-6">Recent Projects</h6>
-            <!-- row -->
-            <div class="pricing-wrapper">
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/gathertogether.gif" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">GatherTogether</h6>
-                        <div class="pricing-card-list">
-                            <p>We all use social media apps like Facebook and Instagram, where users can share a post with a description or caption, a hashtag, and photos. Gather Together is similar to small-scale social media applications. This website lets users to share a memory with just one photo, a brief description, and a hashtag. Users can modify and delete memories, as well as like and dislike other posts.</p>
-                        </div>
-                    </div>
-                    <!-- <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>0.00/Month</span>
-                    </div> -->
-                    <a href="https://pavankhots17.github.io/GatherTogether/" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">More Detials</a>
-                    <a href="https://youtu.be/wmMyHDTbTak" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">Watch Video</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/quicko.gif" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">QuickO</h6>
-                        <div class="pricing-card-list">
-                            <p>QuickO is a Java-based Android application that was created using the Android Studio platform. It utilises serpAPI and firebase. With this application, you may conduct fast searches without having to type anything or using your microphone. App will provide you the features of searching through your device camera only.</p>
-                        </div>
-                    </div>
-                    <!-- <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>9.99/Month</span>
-                    </div> -->
-                    <a href="https://pavankhots17.github.io/QuickO/" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">More Detials</a>
-                    <a href="https://youtube.com/shorts/d-5GA3s-liU?feature=share" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">Watch Video</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-card-header">
-                        <img class="pricing-card-icon" src="assets/imgs/DDD.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="pricing-card-body">
-                        <h6 class="pricing-card-title">Drowsy Driver Detection</h6>
-                        <div class="pricing-card-list">
-                            <p>Drowsy driver detection is a system that is part of the vehicle safety sector. It basically analyses the driver’s tiredness level based on his or her eye aspect ratio and alerts the driver accordingly. This system can also detect the driver sleeping off. As a result, the system will assist the driver in avoiding road accidents.</p>
-                        </div>
-                    </div>
-                    <!-- <div class="pricing-card-footer">
-                        <span>$</span>
-                        <span>99.9/Month</span>
-                    </div> -->
-                    <a href="https://pavankhots17.github.io/Drowsy_Driver_Detection.io/" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">More Detials</a>
-                    <!-- <a href="" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">Watch Video</a>                 -->
-                </div>
+    <div class="container text-center">
+        <p class="section-subtitle">Where did I use my skill?</p>
+        <h6 class="section-title mb-6">Recent Projects</h6>
 
-            </div><!-- end of pricing wrapper -->
-        </div> <!-- end of container -->
-    </section><!-- end of pricing section -->
+        <div class="pricing-wrapper single-project">
+        <div class="pricing-card full-width">
+            <div class="pricing-card-header dual-logos">
+            <img class="org-logo" src="assets/imgs/LTIMindtree_Logo.svg.png" alt="LTIMindtree Logo">
+            <span class="divider">-</span>
+            <img class="org-logo" src="assets/imgs/Microsoft_logo_(2012).svg.png" alt="Microsoft Logo">
+            </div>
 
-    <div style="text-align: center;">                    
-        <a href="https://github.com/PavanKhotS17#projects" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">See all projects on GitHub</a>
-    </div>
+            <div class="pricing-card-body text-left">
+            <h4 class="pricing-card-title" style="font-size: xx-large;">Microsoft DEX-E (Defender Experts for Endpoint)</h4>
+            <p class="project-meta"><b>Organization:</b> LTIMindtree Limited — <i>Client: Microsoft</i></p>
+            <p class="project-duration"><b>Duration:</b> 2024 – Present (2 Years)</p> <hr>
 
-    <br><br>
+            <ul class="project-points">
+                <li>Investigated and responded to <b>10,000+ endpoint security incidents</b> and <b>500+ high-severity escalations</b>, improving threat detection and response efficiency.</li>
+                <li>Investigated and triaged high-severity incidents involving <b>info-stealers, credential theft, privilege escalation, and lateral movement.</b></li>
+                <li>Handled <b>targeted threat campaigns</b> (e.g., ClickFix), including exploitation attempts on server vulnerabilities such as <b>SharePoint RCE</b> and <b>WSUS spoofing.</b></li>
+                <li>Developed <b>KQL-based hunting queries</b> to track and monitor ongoing threats and targeted campaigns.</li>
+                <li>Investigated <b>Windows event logs</b> and mapped findings to <b>MITRE ATT&CK techniques</b>.</li>
+                <li>Conducted <b>knowledge transfer (KT) sessions</b> and shadowing for new team members, enhancing team productivity and reducing onboarding time.</li>
+            </ul>
+            </div>
+        </div>
+        </div><!-- end of pricing wrapper -->
+    </div><!-- end of container -->
+    </section><!-- end of pricing section --> <hr>
 
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href="mailto:khotpavankumar27@gmail.com" target="_blank"><button class="btn btn-lg my-font btn-light rounded">Hire Me</button></a>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
-
-    <!-- testimonial section -->
-    <!-- <section class="section" id="testmonial">
-        <div class="container text-center">
-            <p class="section-subtitle">What Think Client About Me ?</p>
-            <h6 class="section-title mb-6">Testmonial</h6> -->
-
-            <!-- row -->
-            <!-- <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
-                            <h6 class="testimonial-card-title">Emily Reb</h6>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        <!-- </div> 
-    </section>  -->
-    
-    <!-- blog section -->
+ 
+     <!-- Certification Section -->
     <section class="section" id="certification">
-        <!-- container -->
-        <div class="container text-center">
-            <p class="section-subtitle">Recent achievements?</p>
-            <h6 class="section-title mb-6">Certificates and Badges</h6>
+    <div class="container text-center">
+        <p class="section-subtitle">Recent achievements?</p>
+        <h6 class="section-title mb-6">Certifications</h6>
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/awslogo.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">AWS Cloud Technical Essentials</h6>
-                    <p><b>By: </b> Coursea | AWS  </p>
-                    <p><b>Issued on: </b> July 2023</p>
-                </div>
-                <div>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/D9XFQLFPVWT4" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">View Certificate/Badge</a>
-                </div>
-            </div><!-- end of blog wrapper -->
-            
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/googlecloud.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Cloud Technical Series '23</h6>
-                    <p><b>By: </b> Google Cloud</p>
-                    <p><b>Issued on: </b> April 2023</p>
-                </div>
-                <div>
-                    <a href="https://www.credential.net/a0648337-3908-4a02-87be-f6f475cc0743" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">View Certificate/Badge</a>
-                </div>
-            </div><!-- end of blog wrapper -->
+         <!-- Certification Card 1 -->
+        <div class="cert-card">
+        <img src="assets/imgs/tryhackme_logo.png" alt="AWS Logo" class="cert-logo">
+        <div class="cert-info">
+            <h5 class="cert-title">Pre Security</h5>
+            <p><b>Issued By:</b> TryHackme</p>
+            <p><b>Issued On:</b> Sept 2025</p>
+        </div>
+        <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-3Y7CM5UMEW.pdf" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
+        </div>
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/ibm.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Relational Databases (RDBMS) Essentials</h6>
-                    <p><b>By: </b> IBM </p>
-                    <p><b>Issued on: </b> August 2022</p>
-                </div>
-                <div>
-                    <a href="https://www.credly.com/badges/e7d1442b-d3d9-4cfc-82ec-23bb4212b8dc" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">View Certificate/Badge</a>
-                </div>
-            </div><!-- end of blog wrapper -->
+        <!-- Certification Card 1 -->
+        <div class="cert-card">
+        <img src="assets/imgs/awslogo.png" alt="AWS Logo" class="cert-logo">
+        <div class="cert-info">
+            <h5 class="cert-title">AWS Cloud Technical Essentials</h5>
+            <p><b>Issued By:</b> Coursera | AWS</p>
+            <p><b>Issued On:</b> July 2023</p>
+        </div>
+        <a href="https://www.coursera.org/account/accomplishments/verify/D9XFQLFPVWT4" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
+        </div>
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/awslogo.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">AWS S3 Basics</h6>
-                    <p><b>By: </b> Coursea | AWS  </p>
-                    <p><b>Issued on: </b> August 2022</p>
-                </div>
-                <div>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/NYAWBKGLV9RK" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">View Certificate/Badge</a>
-                </div>
-            </div><!-- end of blog wrapper -->
+        <!-- Certification Card 2 -->
+        <!-- <div class="cert-card">
+        <img src="assets/imgs/googlecloud.png" alt="Google Cloud Logo" class="cert-logo">
+        <div class="cert-info">
+            <h5 class="cert-title">Cloud Technical Series '23</h5>
+            <p><b>Issued By:</b> Google Cloud</p>
+            <p><b>Issued On:</b> April 2023</p>
+        </div>
+        <a href="https://www.credential.net/a0648337-3908-4a02-87be-f6f475cc0743" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
+        </div> -->
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/coursera.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Object Oriented Programming in Java</h6>
-                    <p><b>By: </b> Coursera </p>
-                    <p><b>Issued on: </b> August 2020</p>
-                </div>
-                <div>
-                    <a href="https://www.coursera.org/account/accomplishments/verify/TTNLP9CNKLT4" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">View Certificate/Badge</a>
-                </div>
-            </div><!-- end of blog wrapper -->
+        <!-- Certification Card 3 -->
+        <div class="cert-card">
+        <img src="assets/imgs/ibm.png" alt="IBM Logo" class="cert-logo">
+        <div class="cert-info">
+            <h5 class="cert-title">Relational Databases (RDBMS) Essentials</h5>
+            <p><b>Issued By:</b> IBM</p>
+            <p><b>Issued On:</b> August 2022</p>
+        </div>
+        <a href="https://www.credly.com/badges/e7d1442b-d3d9-4cfc-82ec-23bb4212b8dc" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
+        </div>
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/hackerrank.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Problem Solving</h6>
-                    <p><b>By: </b> HackerRank </p>
-                    <p><b>Issued on: </b> February 2021</p>
-                </div>
-                <div>
-                    <a href="https://www.hackerrank.com/certificates/038c1761000c" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">View Certificate/Badge</a>
-                </div>
-            </div><!-- end of blog wrapper -->
 
-        </div><!-- end of container -->
-    </section><!-- end of blog section --> <hr>
+    </div>
+    </section> <hr>
 
     <!-- contact section -->
     <section class="section" id="contact">
@@ -477,18 +452,6 @@
                         <a class="contactblocklink"> Visit Facebook Profile </a>
                     </div>
              
-                    <!-- <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
-                    </div> -->
                 </div>  
             </form> 
         </div><!-- end of container -->
@@ -508,6 +471,7 @@
                 <a href="tel:+919307268996" target="_blank" class="link"><i class="ti-mobile"></i></a>
             </div>
         </footer>
+                
     </div> <!-- end of page footer -->
 	
 	<!-- core  -->
@@ -520,5 +484,9 @@
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
 
+    <!-- /////////////////////////////////////////// experiment below .////////////////////////////////////////// -->
+
+
 </body>
 </html>
+

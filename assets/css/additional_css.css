@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.typing-container {
+  text-align: justify;
+}
+
+.typing-text {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.5rem;
+  color: #111; /* visible on white background */
+  display: inline-block;
+  border-right: 2px solid #111; /* cursor */
+  white-space: nowrap; /* prevents breaking mid-type */
+  overflow: hidden;
+  animation: typing 3s steps(31, end) forwards, blink 0.7s step-end infinite;
+  max-width: 100%;
+  border-right: none;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Profile Badges ................................................... */
+
+.cyber-profiles {
+  background: #fff;
+  padding: 80px 0;
+  padding-bottom: 0%;
+  text-align: center;
+}
+
+.section-heading {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* GRID: 3 equal cards */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Card styling */
+.profile-card {
+  background: #fafafa;
+  width: 100%;
+  max-width: 340px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 420px; /* 🔥 same height for all */
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.profile-card h3 {
+  font-family: 'Share Tech Mono', monospace;
+  color: #111;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.profile-card i {
+  color: #111;
+  margin-right: 6px;
+}
+
+.profile-desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.badge-frame {
+  width: 100%;
+  height: 150px;
+  border: none;
+  overflow: hidden;
+  display: block;
+  border-radius: 8px;
+}
+
+.tryhackme-frame-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.linkedin-badge {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* GitHub / LinkedIn / TryHackMe button */
+.profile-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+
+.profile-link:hover {
+  background: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Profile Badges ............................... */
+
+/* Work Experience ............................... */
+
+.timeline-container {
+  position: relative;
+  margin: 40px auto;
+  padding-left: 30px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #695aa6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 25px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #6f42c1;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #695aa6;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-role {
+  color: grey;
+  font-weight: medium;
+  margin-bottom: 5px;
+}
+
+.timeline-company {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.timeline-duration {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.timeline-desc {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Work Experience ............................... */
+
+/* Projects....................................................... */
+
+/* Project Section - Full Width Single Card */
+/* Project Section - Full Width Single Card */
+.single-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card.full-width {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 25px;
+}
+
+.pricing-card.full-width:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Dual Logo Header */
+.pricing-card-header.dual-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.org-logo {
+  width: 130px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.org-logo:hover {
+  transform: scale(1.05);
+}
+
+.divider {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #888;
+}
+
+.pricing-card-body {
+  text-align: left;
+}
+
+.pricing-card-title {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.project-meta,
+.project-duration {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.project-points {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.project-points li {
+  margin-bottom: 8px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .pricing-card.full-width {
+    padding: 20px;
+  }
+
+  .org-logo {
+    width: 100px;
+  }
+
+  .divider {
+    font-size: 1.4rem;
+  }
+}
+
+/* Projects....................................................... */
+
+/* Hire me ........................................................ */
+/* Floating Hire Me Button - Enhanced Version */
+.floating-hire-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  background: linear-gradient(135deg, #6f42c1, #333);
+  color: #00ffea;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  padding: 20px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 25px rgba(0, 255, 234, 0.4);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00ffea;
+  text-transform: uppercase;
+}
+
+/* Hover effects for glow & lift */
+.floating-hire-btn:hover {
+  background: linear-gradient(135deg, #00ffea, #007BFF);
+  color: #fff;
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 234, 0.8);
+}
+
+/* Floating animation for cyber vibe */
+@keyframes floatPulse {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(0, 255, 234, 0.3);
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 0 35px rgba(0, 255, 234, 0.6);
+  }
+}
+
+.floating-hire-btn {
+  animation: floatPulse 3s ease-in-out infinite;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .floating-hire-btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 16px 28px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Hire me ........................................................ */
+
+/* Certifications ........................................................ */
+
+/* Certification Section Styling */
+#certification {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cert-logo {
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+
+.cert-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.cert-title {
+  font-size: 1.2rem;
+  color: grey;
+  margin-bottom: 6px;
+}
+
+.cert-info p {
+  margin: 3px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.cert-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cert-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cert-logo {
+    margin: 0 0 15px 0;
+    width: 80px;
+  }
+
+  .cert-btn {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .cert-info {
+    text-align: center;
+  }
+}
+
+
+/* Certifications ........................................................ */

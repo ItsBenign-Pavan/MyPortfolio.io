@@ -7,7 +7,8 @@
 .typing-text {
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.5rem;
-  color: #111; /* visible on white background */
+  color: #6f42c1; /* visible on white background */
+  font-weight: bold;
   display: inline-block;
   border-right: 2px solid #111; /* cursor */
   white-space: nowrap; /* prevents breaking mid-type */
@@ -136,7 +137,7 @@
   margin-top: 10px;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #111;
+  background:#6f42c1;
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
@@ -144,7 +145,8 @@
 }
 
 .profile-link:hover {
-  background: #333;
+  color:white;
+  background-color: #8b5de1;
 }
 
 /* Responsive */
@@ -333,14 +335,14 @@
 /* Floating Hire Me Button - Enhanced Version */
 .floating-hire-btn {
   position: fixed;
-  bottom: 35px;
-  right: 35px;
+  top: 20px;
+  right: 20px;
   background: linear-gradient(135deg, #6f42c1, #333);
-  color: #00ffea;
-  font-weight: 700;
-  font-size: 1.3rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1 rem;
   letter-spacing: 0.5px;
-  padding: 20px 36px;
+  padding: 8px 20px;
   border-radius: 50px;
   text-decoration: none;
   box-shadow: 0 0 25px rgba(0, 255, 234, 0.4);

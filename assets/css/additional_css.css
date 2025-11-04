@@ -2,16 +2,17 @@
 
 .typing-container {
   text-align: justify;
+  overflow-x: hidden; /* +Prevent text overflow on small screens */
 }
 
 .typing-text {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 1.5rem;
-  color: #6f42c1; /* visible on white background */
+  font-size: clamp(1rem, 4vw, 1.5rem); /* Responsive font size */
+  color: #6f42c1;
   font-weight: bold;
   display: inline-block;
-  border-right: 2px solid #111; /* cursor */
-  white-space: nowrap; /* prevents breaking mid-type */
+  border-right: 2px solid #111; /* blinking cursor */
+  white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(31, end) forwards, blink 0.7s step-end infinite;
   max-width: 100%;
@@ -34,6 +35,17 @@
     border-color: transparent;
   }
 }
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .typing-text {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    text-align: center;
+    white-space: normal; /* allow wrapping if needed */
+    border-right: 1px solid #111;
+  }
+}
+
 
 /* Profile Badges ................................................... */
 
@@ -332,6 +344,7 @@
 /* Projects....................................................... */
 
 /* Hire me ........................................................ */
+
 /* Floating Hire Me Button - Enhanced Version */
 .floating-hire-btn {
   position: fixed;
@@ -340,9 +353,9 @@
   background: linear-gradient(135deg, #6f42c1, #333);
   color: white;
   font-weight: 500;
-  font-size: 1 rem;
+  font-size: 1rem;
   letter-spacing: 0.5px;
-  padding: 8px 20px;
+  padding: 10px 24px;
   border-radius: 50px;
   text-decoration: none;
   box-shadow: 0 0 25px rgba(0, 255, 234, 0.4);
@@ -353,6 +366,7 @@
   justify-content: center;
   border: 2px solid #00ffea;
   text-transform: uppercase;
+  animation: floatPulse 3s ease-in-out infinite;
 }
 
 /* Hover effects for glow & lift */
@@ -375,19 +389,30 @@
   }
 }
 
-.floating-hire-btn {
-  animation: floatPulse 3s ease-in-out infinite;
-}
-
-/* Mobile Optimization */
-@media (max-width: 600px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .floating-hire-btn {
+    top: auto;
     bottom: 20px;
     right: 20px;
-    padding: 16px 28px;
-    font-size: 1.1rem;
+    left: auto;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0, 255, 234, 0.3);
   }
 }
+
+@media (max-width: 480px) {
+  .floating-hire-btn {
+    bottom: 15px;
+    right: 15px;
+    font-size: 0.85rem;
+    padding: 8px 18px;
+    box-shadow: 0 0 12px rgba(0, 255, 234, 0.4);
+  }
+}
+.typing-container
 
 /* Hire me ........................................................ */
 

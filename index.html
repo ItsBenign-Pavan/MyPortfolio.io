@@ -17,9 +17,34 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
         <!-- Floating Hire Me Button -->
-        <a href="mailto:khotpavankumar27@gmail.com" target="_blank" class="floating-hire-btn">
+        <!-- <a href="mailto:khotpavankumar27@gmail.com" target="_blank" class="floating-hire-btn">
         <span> Hire Me</span>
+        </a> -->
+        <!-- Floating Hire Me Button -->
+        <a href="#" class="floating-hire-btn" id="hireBtn">
+        <span>Hire Me</span>
         </a>
+
+        <!-- Contact Popup -->
+        <div class="contact-popup" id="contactPopup">
+        <div class="popup-content">
+            <h4>Let's Connect!</h4>
+            <a href="mailto:khotpavankumar27@gmail.com" target="_blank" class="popup-link">
+            <i class="fa fa-envelope"></i> Email Me
+            </a>
+            <a href="tel:+919307268996" class="popup-link">
+            <i class="fa fa-phone"></i> Call Me
+            </a>
+            <a href="https://www.linkedin.com/in/pavankumar-khot-91a95b209/" target="_blank" class="popup-link">
+            <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/PavanKhotS17" target="_blank" class="popup-link">
+            <i class="fa fa-github"></i> GitHub
+            </a>
+            <button id="closePopup" class="close-btn">×</button>
+        </div>
+        </div>
+
 
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
@@ -44,9 +69,9 @@
                 <li class="item">
                     <a class="link" href="#certification">Certification</a>
                 </li>
-                <li class="item ml-md-3">
-                    <a href="#contact" class="btn btn-primary">Contact Me</a>
-                </li>
+                <!-- <li class="item ml-md-3">
+                    <a href="#contact" class="btn btn-primary" >Contact Me</a>
+                </li> -->
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
@@ -66,9 +91,10 @@
            </h1>
 
         <div class="typing-container">
-        <p class="typing-text">
-        Scroll down, No phishing here 😉
-        </p>      
+            <p class="typing-text">
+            Scroll down, No phishing here 😉
+            </p>  
+        </div>    
     </header ><!-- end of page header -->
 
     <!-- about section -->
@@ -89,7 +115,17 @@ I am a cybersecurity professional specializing in endpoint security and threat h
 
 Passionate about staying ahead of emerging threats, I combine technical expertise with a proactive mindset to strengthen security operations and protect critical assets. I thrive in dynamic environments and continuously seek opportunities to learn and innovate in cybersecurity.
                     </p>
-                    <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" download="Pavankumar's CV"><button class="btn-rounded btn btn-outline-primary mt-4"> Download CV</button></a> 
+
+                    <div class="cv-buttons">
+                        <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" target="_blank">
+                            <button class="btn-rounded btn btn-primary mt-4">View CV</button>
+                        </a>
+                        <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" download="Pavankumar's CV">
+                            <button class="btn-rounded btn btn-primary mt-4">Download CV</button>
+                        </a>
+                    </div>
+
+                    <!-- <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" download="Pavankumar's CV"><button class="btn-rounded btn btn-outline-primary mt-4"> Download CV</button></a>  -->
                     <!-- &nbsp  <a href="MyCoverLetter.pdf" download="Pavankumar's CL"><button class="btn-rounded btn btn-outline-primary mt-4"></i> Download Cover Letter</button></a> -->
                 </div>
             </div><!-- end of about wrapper -->    
@@ -427,11 +463,11 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
     </section> <hr>
 
     <!-- contact section -->
-    <section class="section" id="contact">
+    <!-- <section class="section" id="contact">
         <div class="container text-center">
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
+            
             <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
 
@@ -454,9 +490,14 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
              
                 </div>  
             </form> 
-        </div><!-- end of container -->
+        </div> -->
+        <!-- end of container -->
         
-        <a href="#top" class="topBtn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+        <!-- <a href="#top" class="topBtn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a> -->
+        <!-- Scroll to Top Button -->
+        <a href="#top" class="topBtn" id="scrollTopBtn">
+        <i class="fa fa-arrow-up"></i>
+        </a>
 
     </section><!-- end of contact section -->
     
@@ -470,8 +511,7 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
                 <a href="mailto:khotpavankumar27@gmail.com" target="_blank" class="link"><i class="ti-email"></i></a>
                 <a href="tel:+919307268996" target="_blank" class="link"><i class="ti-mobile"></i></a>
             </div>
-        </footer>
-                
+        </footer>            
     </div> <!-- end of page footer -->
 	
 	<!-- core  -->
@@ -483,6 +523,41 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+
+    <!-- Scroll up button script -->
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+            scrollTopBtn.classList.add("show");
+            } else {
+            scrollTopBtn.classList.remove("show");
+            }
+        });
+    </script>
+
+    <!-- Hire me pop-up script -->
+    <script>
+        document.getElementById('hireBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('contactPopup').classList.toggle('active');
+        });
+
+        document.getElementById('closePopup').addEventListener('click', function() {
+        document.getElementById('contactPopup').classList.remove('active');
+        });
+
+        window.addEventListener('click', function(e) {
+        const popup = document.getElementById('contactPopup');
+        const button = document.getElementById('hireBtn');
+        if (!popup.contains(e.target) && !button.contains(e.target)) {
+            popup.classList.remove('active');
+        }
+        });
+    </script>
+
+
 
     <!-- /////////////////////////////////////////// experiment below .////////////////////////////////////////// -->
 

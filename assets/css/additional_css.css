@@ -249,7 +249,6 @@
 /* Projects....................................................... */
 
 /* Project Section - Full Width Single Card */
-/* Project Section - Full Width Single Card */
 .single-project {
   display: flex;
   justify-content: center;
@@ -346,16 +345,16 @@
 /* Hire me ........................................................ */
 
 /* Floating Hire Me Button - Enhanced Version */
+/* Floating Hire Me Button */
 .floating-hire-btn {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 80px; /* moved from bottom to top */
+  right: 25px;
   background: linear-gradient(135deg, #6f42c1, #333);
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
-  letter-spacing: 0.5px;
-  padding: 10px 24px;
+  padding: 12px 28px;
   border-radius: 50px;
   text-decoration: none;
   box-shadow: 0 0 25px rgba(0, 255, 234, 0.4);
@@ -369,50 +368,111 @@
   animation: floatPulse 3s ease-in-out infinite;
 }
 
-/* Hover effects for glow & lift */
 .floating-hire-btn:hover {
   background: linear-gradient(135deg, #00ffea, #007BFF);
   color: #fff;
-  transform: translateY(-6px) scale(1.05);
+  transform: translateY(-5px) scale(1.05);
   box-shadow: 0 0 40px rgba(0, 255, 234, 0.8);
 }
 
-/* Floating animation for cyber vibe */
+/* Floating animation */
 @keyframes floatPulse {
   0%, 100% {
     transform: translateY(0);
-    box-shadow: 0 0 20px rgba(0, 255, 234, 0.3);
   }
   50% {
-    transform: translateY(-6px);
-    box-shadow: 0 0 35px rgba(0, 255, 234, 0.6);
+    transform: translateY(-5px);
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .floating-hire-btn {
-    top: auto;
-    bottom: 20px;
-    right: 20px;
-    left: auto;
-    font-size: 0.9rem;
-    padding: 10px 20px;
-    border-radius: 40px;
-    box-shadow: 0 0 15px rgba(0, 255, 234, 0.3);
-  }
+/* Popup Styles */
+.contact-popup {
+  position: fixed;
+  top: 135px; /* position below button */
+  right: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  z-index: 10000;
+  display: none;
+  animation: fadeIn 0.3s ease forwards;
+  width: 220px;
+  border: 2px solid #6f42c1;
 }
 
-@media (max-width: 480px) {
-  .floating-hire-btn {
-    bottom: 15px;
+.contact-popup.active {
+  display: block;
+}
+
+.popup-content h4 {
+  color: #6f42c1;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.popup-link {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.popup-link i {
+  margin-right: 8px;
+  color: #6f42c1;
+  transition: color 0.3s ease;
+}
+
+/* ✅ Fix: keep icons visible while hover */
+.popup-link:hover {
+  background: #6f42c1;
+  color: white;
+  transform: scale(1.05);
+}
+
+.popup-link:hover i {
+  color: #fff; /* make icons white on hover */
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: #6f42c1;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Popup fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .contact-popup {
     right: 15px;
-    font-size: 0.85rem;
-    padding: 8px 18px;
-    box-shadow: 0 0 12px rgba(0, 255, 234, 0.4);
+    top: 135px;
+    width: 200px;
+  }
+
+  .floating-hire-btn {
+    top: 80px;
+    right: 15px;
+    padding: 10px 22px;
   }
 }
-.typing-container
 
 /* Hire me ........................................................ */
 
@@ -499,3 +559,24 @@
 
 
 /* Certifications ........................................................ */
+
+/* View CV button ........................................................ */
+
+.cv-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* space between buttons */
+  flex-wrap: wrap; /* responsive on smaller screens */
+}
+
+.cv-buttons .btn {
+  min-width: 150px;
+  transition: all 0.3s ease;
+}
+
+.cv-buttons .btn:hover {
+  transform: translateY(-3px);
+}
+
+
+/* View CV button ........................................................ */

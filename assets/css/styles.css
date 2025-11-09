@@ -11140,6 +11140,10 @@ p {
   border-radius: 3px;
 }
 
+.service-card .body p{
+  margin: 5px;
+}
+
 .service-card .body {
   padding: 10px;
 }

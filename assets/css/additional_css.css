@@ -581,6 +581,16 @@
 
 /* View CV button ........................................................ */
 
-#skills p {
-  margin: 10px;
+/* hidden skills row ........................................................ */
+.hidden-rows {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
 }
+
+.hidden-rows.show {
+  max-height: 2000px; /* Large enough to fit both rows */
+  opacity: 1;
+}
+/* hidden skills row ........................................................ */

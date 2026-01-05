@@ -1,0 +1,41 @@
+        .top-bar {
+            padding: 20px 30px;
+        }
+
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 22px;
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+            /* Force base color */
+            color: #ffffff !important;
+        }
+
+        /* FORCE color on hover/active/focus */
+        .back-home-btn:hover,
+        .back-home-btn:focus,
+        .back-home-btn:active {
+            color: #ffffff !important;
+            background: linear-gradient(135deg, #3730a3, #4f46e5);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Icon */
+        .back-home-btn i {
+            font-size: 14px;
+            color: #ffffff !important;
+            transition: transform 0.3s ease;
+        }
+
+        .back-home-btn:hover i {
+            transform: translateX(-4px);
+        }

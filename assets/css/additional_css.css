@@ -643,7 +643,7 @@
 }
 
 .badge-wrapper img {
-    width: 160px;
+    width: 200px;
     height: auto;
     filter: drop-shadow(0 10px 20px rgba(255, 215, 0, 0.5));
     transition: transform 0.4s ease;

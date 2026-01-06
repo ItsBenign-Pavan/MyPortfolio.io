@@ -4,6 +4,7 @@
 
         .back-home-btn {
             display: inline-flex;
+            position: sticky;
             align-items: center;
             gap: 10px;
             padding: 12px 22px;
@@ -39,3 +40,39 @@
         .back-home-btn:hover i {
             transform: translateX(-4px);
         }
+
+
+.top-bar-1 {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.back-home-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 22px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+}
+
+.back-home-btn-primary:hover {
+    background: linear-gradient(135deg, #3730a3, #4f46e5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+    color: red;
+    font-size: 22px;
+}
+
+

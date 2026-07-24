@@ -1,0 +1,123 @@
+.cyber-toast{
+
+    position:fixed;
+
+    top:30px;
+    right:30px;
+
+    width:500px;
+
+    background:#ffffff;
+
+    border-left:5px solid #22c55e;
+
+    border-radius:14px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    z-index:99999;
+
+    transform:translateX(450px);
+
+    opacity:0;
+
+    transition:.45s ease;
+
+}
+
+.cyber-toast.show{
+
+    transform:translateX(0);
+
+    opacity:1;
+
+}
+
+.toast-icon{
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+.toast-title{
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:4px;
+
+}
+
+.toast-message{
+
+    color:#4b5563;
+
+    line-height:1.5;
+
+    font-size:.93rem;
+
+}
+
+.toast-close{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    color:#6b7280;
+
+    font-size:16px;
+
+    margin-left:auto;
+
+}
+
+.toast-close:hover{
+
+    color:#111827;
+
+}
+
+@media(max-width:768px){
+
+    .cyber-toast{
+
+        width:92%;
+
+        right:4%;
+
+        top:18px;
+
+    }
+
+}

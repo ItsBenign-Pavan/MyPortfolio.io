@@ -607,7 +607,7 @@
 
 .cert-btn{
 
-    width:100%;
+    max-width:200px;
 
     justify-content:center;
 
@@ -670,10 +670,5 @@
 
 }
 
-.slider-btn{
-
-    display:none;
-
-}
 
 }

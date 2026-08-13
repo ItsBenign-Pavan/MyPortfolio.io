@@ -1,0 +1,615 @@
+/* ==========================================================
+   PROJECTS — STABLE DYNAMIC CAROUSEL
+   ========================================================== */
+
+.projects-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-heading {
+    margin-bottom: 2.25rem;
+}
+
+.projects-intro {
+    max-width: 680px;
+    margin: 0.65rem auto 0;
+    opacity: 0.72;
+}
+
+.projects-carousel {
+    --project-gap: 22px;
+    --project-radius: 24px;
+    position: relative;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.projects-viewport {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--project-radius);
+}
+
+.projects-track {
+    display: flex;
+    gap: var(--project-gap);
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+    transition: transform 560ms cubic-bezier(.22, .61, .36, 1);
+    will-change: transform;
+}
+
+.project-slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.project-slide-inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(280px, .85fr) minmax(0, 1.15fr);
+    min-height: 445px;
+    overflow: hidden;
+    border: 1px solid rgba(127, 127, 127, .18);
+    border-radius: var(--project-radius);
+    background: rgba(255, 255, 255, .035);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .10);
+}
+
+.project-slide-number {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    z-index: 3;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    opacity: .48;
+}
+
+.project-slide-visual {
+    position: relative;
+    min-height: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(127, 127, 127, .07);
+}
+
+.project-slide-visual::before,
+.project-slide-visual::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(127, 127, 127, .18);
+}
+
+.project-slide-visual::before {
+    width: 250px;
+    height: 250px;
+}
+
+.project-slide-visual::after {
+    width: 390px;
+    height: 390px;
+}
+
+.project-brand-pair {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 28px;
+}
+
+.project-brand-pair img {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, .12));
+}
+
+.project-brand-x {
+    font-size: 1.5rem;
+    opacity: .55;
+}
+
+.project-visual-label {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 3;
+    padding: 7px 11px;
+    border: 1px solid rgba(127, 127, 127, .18);
+    border-radius: 999px;
+    background: rgba(127, 127, 127, .08);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.project-slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 54px 56px 48px;
+}
+
+.project-slide-eyebrow {
+    margin: 0 0 9px;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    opacity: .62;
+}
+
+.project-slide-content h3 {
+    margin: 0 0 16px;
+    font-size: clamp(1.65rem, 3vw, 2.45rem);
+    line-height: 1.12;
+}
+
+.project-slide-description {
+    max-width: 650px;
+    margin: 0;
+    line-height: 1.75;
+    opacity: .78;
+}
+
+.project-stat-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin: 26px 0 20px;
+}
+
+.project-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-stat strong {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.project-stat span {
+    margin-top: 6px;
+    font-size: .75rem;
+    opacity: .62;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 25px;
+}
+
+.project-tags span {
+    padding: 6px 10px;
+    border: 1px solid rgba(127, 127, 127, .18);
+    border-radius: 999px;
+    font-size: .7rem;
+    line-height: 1;
+    opacity: .82;
+}
+
+.project-slide-action {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 0;
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: gap .25s ease, opacity .25s ease;
+}
+
+.project-slide-action:hover {
+    gap: 14px;
+    text-decoration: none;
+}
+
+/* Azure visual — intentionally abstract rather than SOC-themed */
+.project-slide-visual--azure {
+    background:
+        radial-gradient(circle at 50% 50%, rgba(0, 120, 212, .10), transparent 48%),
+        rgba(127, 127, 127, .07);
+}
+
+.azure-project-core {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    border: 1px solid rgba(127, 127, 127, .25);
+    background: rgba(127, 127, 127, .08);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.azure-project-orbit {
+    position: absolute;
+    border: 1px solid rgba(127, 127, 127, .22);
+    border-radius: 50%;
+}
+
+.azure-project-orbit--one {
+    width: 215px;
+    height: 215px;
+    animation: projectOrbit 12s linear infinite;
+}
+
+.azure-project-orbit--two {
+    width: 315px;
+    height: 315px;
+    animation: projectOrbit 18s linear infinite reverse;
+}
+
+@keyframes projectOrbit {
+    to { transform: rotate(360deg); }
+}
+
+/* Navigation */
+.project-carousel-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    transform: translateY(-50%);
+    border: 1px solid rgba(127, 127, 127, .22);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .82);
+    color: inherit;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+    cursor: pointer;
+    transition: transform .2s ease, opacity .2s ease, background .2s ease;
+}
+
+.project-carousel-btn:hover {
+    transform: translateY(-50%) scale(1.06);
+}
+
+.project-carousel-btn:disabled {
+    opacity: .38;
+    cursor: default;
+}
+
+.project-carousel-btn--prev {
+    left: -22px;
+}
+
+.project-carousel-btn--next {
+    right: -22px;
+}
+
+.project-carousel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.project-carousel-dots {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.project-dot {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: .22;
+    cursor: pointer;
+    transition: width .25s ease, opacity .25s ease;
+}
+
+.project-dot.is-active {
+    width: 24px;
+    border-radius: 999px;
+    opacity: .75;
+}
+
+.project-carousel-count {
+    min-width: 42px;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    opacity: .5;
+}
+
+/* Dark mode compatibility */
+body.dark-mode .project-slide-inner {
+    background: rgba(255, 255, 255, .025);
+    border-color: rgba(255, 255, 255, .11);
+}
+
+body.dark-mode .project-carousel-btn {
+    background: rgba(30, 30, 30, .86);
+    border-color: rgba(255, 255, 255, .13);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .project-slide-inner {
+        grid-template-columns: minmax(220px, .72fr) minmax(0, 1.28fr);
+        min-height: 430px;
+    }
+
+    .project-slide-visual {
+        min-height: 430px;
+    }
+
+    .project-slide-content {
+        padding: 45px 40px 40px;
+    }
+
+    .project-carousel-btn--prev {
+        left: 10px;
+    }
+
+    .project-carousel-btn--next {
+        right: 10px;
+    }
+}
+
+/* Mobile — one stable card, no layout jumping */
+@media (max-width: 767px) {
+    .projects-section {
+        overflow: hidden;
+    }
+
+    .projects-heading {
+        margin-bottom: 1.6rem;
+    }
+
+    .projects-intro {
+        font-size: .88rem;
+    }
+
+    .projects-carousel {
+        --project-radius: 18px;
+    }
+
+    .projects-viewport {
+        border-radius: var(--project-radius);
+    }
+
+    .projects-track {
+        gap: 0;
+    }
+
+    .project-slide-inner {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .project-slide-visual {
+        min-height: 205px;
+        flex: 0 0 205px;
+    }
+
+    .project-slide-visual::before {
+        width: 150px;
+        height: 150px;
+    }
+
+    .project-slide-visual::after {
+        width: 235px;
+        height: 235px;
+    }
+
+    .project-brand-pair img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .project-visual-label {
+        bottom: 14px;
+        left: 16px;
+    }
+
+    .project-slide-content {
+        padding: 28px 23px 30px;
+    }
+
+    .project-slide-content h3 {
+        font-size: 1.55rem;
+        margin-bottom: 12px;
+    }
+
+    .project-slide-description {
+        font-size: .88rem;
+        line-height: 1.65;
+    }
+
+    .project-stat-row {
+        gap: 24px;
+        margin: 20px 0 17px;
+    }
+
+    .project-stat strong {
+        font-size: 1.25rem;
+    }
+
+    .project-tags {
+        margin-bottom: 19px;
+    }
+
+    .project-tags span {
+        font-size: .66rem;
+    }
+
+    .project-carousel-btn {
+        top: 205px;
+        width: 38px;
+        height: 38px;
+    }
+
+    .project-carousel-btn--prev {
+        left: 12px;
+    }
+
+    .project-carousel-btn--next {
+        right: 12px;
+    }
+
+    .project-carousel-footer {
+        margin-top: 17px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .projects-track,
+    .project-slide-action,
+    .project-carousel-btn,
+    .project-dot {
+        transition: none;
+    }
+
+    .azure-project-orbit--one,
+    .azure-project-orbit--two {
+        animation: none;
+    }
+}
+
+
+
+
+/* ==========================================================
+   PROJECT VISUALS — SIMPLE, CLEAR BRANDING
+   ========================================================== */
+
+.project-brand-simple {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.project-brand-simple img {
+    width: 118px;
+    height: 72px;
+    object-fit: contain;
+    filter: none;
+}
+
+.project-brand-x {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: .38;
+}
+
+.azure-brand-simple {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.azure-brand-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.azure-wordmark {
+    font-size: 2.65rem;
+    line-height: 1;
+    font-weight: 650;
+    letter-spacing: -.045em;
+    color: #0078d4;
+}
+
+.azure-brand-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 300px;
+}
+
+.azure-brand-tools span {
+    padding: 7px 10px;
+    border: 1px solid rgba(40,45,55,.10);
+    border-radius: 8px;
+    background: rgba(255,255,255,.72);
+    font-size: .66rem;
+    font-weight: 600;
+    opacity: .72;
+}
+
+/* Eliminate the gap between 100%-width slides.
+   This prevents the gray page/card background from appearing
+   at the edge after clicking Next. */
+.projects-track {
+    gap: 0 !important;
+}
+
+.project-slide {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .project-brand-simple {
+        gap: 17px;
+    }
+
+    .project-brand-simple img {
+        width: 82px;
+        height: 55px;
+    }
+
+    .project-brand-x {
+        font-size: 1.15rem;
+    }
+
+    .azure-wordmark {
+        font-size: 2rem;
+    }
+
+    .azure-brand-simple {
+        gap: 18px;
+    }
+
+    .azure-brand-tools {
+        max-width: 270px;
+        gap: 6px;
+    }
+
+    .azure-brand-tools span {
+        padding: 6px 8px;
+        font-size: .58rem;
+    }
+}

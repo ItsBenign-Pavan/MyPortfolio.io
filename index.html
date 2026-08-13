@@ -13,6 +13,7 @@
     <script src="assets/js/pop-up.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/tagline.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
     <script src="assets/js/tagline.js" defer></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&display=swap" rel="stylesheet">
@@ -29,6 +30,11 @@
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/additional_css.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/certification.css">
+    <link rel="stylesheet" href="assets/css/hire-me.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
@@ -36,37 +42,63 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-        <!-- Floating Hire Me Button -->
-        <!-- <a href="mailto:khotpavankumar27@gmail.com" target="_blank" class="floating-hire-btn">
-        <span> Hire Me</span>
-        </a> -->
-        <!-- Floating Hire Me Button -->
-        <a href="#" class="floating-hire-btn" id="hireBtn">
-        <span>Hire Me</span>
+        <!-- Premium Hire Me Experience -->
+        <a href="#" class="floating-hire-btn" id="hireBtn" aria-label="Open contact options">
+            <span class="hire-btn-pulse"></span>
+            <i class="ti-sparkles" aria-hidden="true"></i>
+            <span>Hire Me</span>
+            <i class="ti-arrow-top-right hire-btn-arrow" aria-hidden="true"></i>
         </a>
 
-        <!-- Contact Popup -->
-        <div class="contact-popup" id="contactPopup">
-        <div class="popup-content">
-            <h4>Let's Connect!</h4>
-            <a href="mailto:khotpavankumar27@gmail.com" target="_blank" class="popup-link">
-            <i class="fa fa-envelope"></i> Email Me
-            </a>
-            <a href="tel:+919307268996" class="popup-link">
-            <i class="fa fa-phone"></i> Call Me
-            </a>
-            <a href="https://www.linkedin.com/in/pavankumar-khot-91a95b209/" target="_blank" class="popup-link">
-            <i class="fa fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/ItsBenign-Pavan" target="_blank" class="popup-link">
-            <i class="fa fa-github"></i> GitHub
-            </a>
-            <button id="closePopup" class="close-btn">×</button>
-        </div>
+        <div id="hireExperience" aria-hidden="true">
+            <div class="hire-panel" role="dialog" aria-modal="true" aria-labelledby="hireTitle">
+                <div class="hire-orb"></div>
+                <button class="hire-close" id="closeHire" aria-label="Close contact panel">&times;</button>
+                <div class="hire-inner">
+                    <span class="hire-eyebrow"><i class="ti-sparkles"></i> Let’s build something secure</span>
+                    <h2 id="hireTitle">Have a security challenge?<br><span>Let’s talk.</span></h2>
+                    <p class="hire-lead">
+                        Whether you’re looking for a security operations professional, a threat-hunting mindset,
+                        or someone who enjoys turning messy telemetry into useful detections — I’d love to hear what you’re building.
+                    </p>
+                    <div class="hire-layout">
+                        <div class="hire-options">
+                            <a class="hire-option" href="mailto:khotpavankumar27@gmail.com?subject=Opportunity%20for%20Pavankumar%20Khot">
+                                <span class="hire-option-icon"><i class="fa fa-envelope"></i></span>
+                                <span class="hire-option-copy"><strong>Start with an email</strong><span>Best for roles, projects &amp; collaboration</span></span>
+                                <i class="ti-arrow-top-right hire-option-arrow"></i>
+                            </a>
+                            <a class="hire-option" href="https://www.linkedin.com/in/pavankumar-khot-91a95b209/" target="_blank" rel="noopener noreferrer">
+                                <span class="hire-option-icon"><i class="fa fa-linkedin"></i></span>
+                                <span class="hire-option-copy"><strong>Connect on LinkedIn</strong><span>Let’s continue the conversation</span></span>
+                                <i class="ti-arrow-top-right hire-option-arrow"></i>
+                            </a>
+                            <a class="hire-option" href="tel:+919307268996">
+                                <span class="hire-option-icon"><i class="fa fa-phone"></i></span>
+                                <span class="hire-option-copy"><strong>Have a quick conversation</strong><span>Call directly</span></span>
+                                <i class="ti-arrow-top-right hire-option-arrow"></i>
+                            </a>
+                        </div>
+                        <div class="hire-profile">
+                            <span class="hire-profile-kicker">A quick snapshot</span>
+                            <h3>Pavan Khot</h3>
+                            <span class="hire-role">Cyber Security Consultant</span>
+                            <ul class="hire-profile-list">
+                                <li><i class="ti-check"></i> Endpoint Security &amp; Threat Hunting</li>
+                                <li><i class="ti-check"></i> Microsoft Sentinel &amp; Defender XDR</li>
+                                <li><i class="ti-check"></i> KQL &amp; Detection Engineering</li>
+                                <li><i class="ti-check"></i> Azure Security &amp; Incident Response</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hire-footer">
+                        <span class="hire-footer-note"><strong>Prefer a detailed overview?</strong> Take a look at my resume.</span>
+                        <a class="hire-resume" href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" target="_blank"><i class="ti-file"></i> View Resume</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-    <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
             <!-- <a class="logo" href="#">My Portfolio </a>          -->
@@ -84,7 +116,7 @@
                     <a class="link" href="#workex">Work Experience</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#projects">Recent Projects</a>
+                    <a class="link" href="#projects">Projects</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#certification">Certification</a>
@@ -101,318 +133,524 @@
         </div>          
     </nav><!-- End of Page Navbar -->
 
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">Hi!</span>
-                <span class="down">I'm Pavan</span>
-           </h1>
+    <!-- Premium landing hero -->
+    <header id="home" class="header premium-hero">
+        <div class="premium-hero-bg"></div>
+        <div class="premium-hero-grid"></div>
+        <div class="premium-hero-glow premium-hero-glow--one"></div>
+        <div class="premium-hero-glow premium-hero-glow--two"></div>
 
-        <div class="soc-widget">
+        <div class="header-content container premium-hero-content">
 
-            <div class="soc-header">
-
-                <div class="soc-left">
-
-                    <div class="soc-indicator"></div>
-
-                    <span>LIVE SOC STATUS</span>
-
+            <div class="hero-copy">
+                <div class="hero-eyebrow">
+                    <span class="hero-eyebrow-dot"></span>
+                    Cyber Security Consultant
                 </div>
 
-                <div class="soc-time" id="socTime">
-                    00:00:00
+                <h1 class="premium-hero-title">
+                    <span class="premium-hero-greeting">Hi, I'm</span>
+                    <span class="premium-hero-name">Pavan<span class="premium-hero-period">.</span></span>
+                </h1>
+
+                <div class="premium-hero-role">
+                    Endpoint Security <span>·</span> Threat Hunting <span>·</span> Cloud Security
                 </div>
 
+                <p class="premium-hero-description">
+                    I investigate threats, engineer detections and build security solutions
+                    that turn complex security signals into actionable outcomes.
+                </p>
+
+                <div class="premium-hero-actions">
+                    <a href="#projects" class="premium-btn premium-btn--primary">
+                        Explore My Work
+                        <i class="ti-arrow-down"></i>
+                    </a>
+                    <a href="#about" class="premium-btn premium-btn--secondary">
+                        More About Me
+                    </a>
+                </div>
+
+                <div class="premium-hero-proof">
+                    <div class="hero-proof-item">
+                        <strong>SC-200</strong>
+                        <span>Microsoft Certified</span>
+                    </div>
+                    <div class="hero-proof-divider"></div>
+                    <div class="hero-proof-item">
+                        <strong>2+ Years</strong>
+                        <span>Cybersecurity</span>
+                    </div>
+                    <div class="hero-proof-divider"></div>
+                    <div class="hero-proof-item">
+                        <strong>DEX-E</strong>
+                        <span>Microsoft Engagement</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="soc-content">
+            <div class="hero-console-wrap">
+                <div class="hero-console-backdrop"></div>
 
-                <div class="soc-command" id="socCommand">
-                    > Initializing...
+                <div class="soc-widget hero-console" id="heroConsole">
+                    <div class="soc-header">
+                        <div class="soc-left">
+                            <div class="soc-window-dots" aria-hidden="true">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="soc-indicator"></div>
+                            <span>PORTFOLIO CONSOLE</span>
+                        </div>
+
+                        <div class="soc-time" id="socTime">00:00:00</div>
+                    </div>
+
+                    <div class="soc-content">
+                        <div class="console-path">pavan@portfolio <span>~</span> $</div>
+
+                        <div class="soc-command" id="socCommand">
+                            &gt;&gt; Initializing...
+                        </div>
+
+                        <div class="soc-output" id="socOutput">
+                            Loading...
+                        </div>
+
+                        <div class="console-cursor-line">
+                            <span>&gt;</span><i></i>
+                        </div>
+                    </div>
+
+                    <div class="hero-console-footer">
+                        <span><i></i> System online</span>
+                        <span>Interactive profile</span>
+                    </div>
                 </div>
 
-                <div class="soc-output" id="socOutput">
-                    Loading...
+                <div class="hero-console-float hero-console-float--top">
+                    <span class="float-icon"><i class="ti-shield"></i></span>
+                    <span><strong>Security</strong><small>Detection &amp; Response</small></span>
                 </div>
 
+                <div class="hero-console-float hero-console-float--bottom">
+                    <span class="float-icon"><i class="ti-pulse"></i></span>
+                    <span><strong>Always learning</strong><small>Build · Hunt · Improve</small></span>
+                </div>
             </div>
-
         </div>
 
-    </header ><!-- end of page header -->
+        <a class="hero-scroll-cue" href="#about" aria-label="Scroll to About section">
+            <span>Scroll to explore</span>
+            <i class="ti-angle-down"></i>
+        </a>
+    </header><!-- end of premium landing hero -->
 
     <!-- about section -->
     <section class="section pt-0" >
         <!-- container -->
         <div class="container text-center" id="about">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/portfolioImage.png" class="about-img">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p style="text-align: justify;">
-                        Hello 👋, <br><br>
-I am a cybersecurity professional specializing in endpoint security and threat hunting. With hands-on experience in threat detection, incident response, and cloud security, I help organizations identify, analyze, and mitigate cyber threats efficiently. <br><br>
+            <!-- premium about wrapper -->
+            <div class="about about-premium">
 
-Passionate about staying ahead of emerging threats, I combine technical expertise with a proactive mindset to strengthen security operations and protect critical assets. I thrive in dynamic environments and continuously seek opportunities to learn and innovate in cybersecurity.
-                    </p>
-
-                    <div class="cv-buttons">
-                        <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" target="_blank">
-                            <button class="btn-rounded btn btn-primary mt-4">View CV</button>
-                        </a>
-                        <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" download="Pavankumar's CV">
-                            <button class="btn-rounded btn btn-primary mt-4">Download CV</button>
-                        </a>
+                <div class="about-visual">
+                    <div class="about-photo-frame">
+                        <div class="about-photo-glow"></div>
+                        <img src="assets/imgs/portfolioImage.png" class="about-img" alt="Pavankumar Khot">
+                        
                     </div>
 
-                    <!-- <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" download="Pavankumar's CV"><button class="btn-rounded btn btn-outline-primary mt-4"> Download CV</button></a>  -->
-                    <!-- &nbsp  <a href="MyCoverLetter.pdf" download="Pavankumar's CL"><button class="btn-rounded btn btn-outline-primary mt-4"></i> Download Cover Letter</button></a> -->
+                    
+
+                    
                 </div>
-            </div><!-- end of about wrapper -->    
+
+                <div class="about-caption about-premium-caption">
+                    <span class="about-eyebrow">A LITTLE ABOUT ME</span>
+                    <h2 class="section-title about-premium-title">
+                        Security is my profession.<br>
+                        <span>Curiosity is my advantage.</span>
+                    </h2>
+
+                    <p class="about-lead">
+                        Hello 👋, I'm Pavankumar — a cybersecurity professional focused on
+                        endpoint security, threat hunting and security operations.
+                    </p>
+
+                    <p class="about-copy">
+                        I work at the intersection of detection, investigation and continuous
+                        learning. I enjoy turning noisy security signals into meaningful findings,
+                        building hands-on labs, and understanding how attacks work so they can
+                        be detected and stopped earlier.
+                    </p>
+
+                    <div class="about-principles">
+                        <div class="about-principle">
+                            <span><i class="ti-search"></i></span>
+                            <div>
+                                <strong>Think like an attacker</strong>
+                                <small>Hunt beyond the obvious.</small>
+                            </div>
+                        </div>
+                        <div class="about-principle">
+                            <span><i class="ti-pulse"></i></span>
+                            <div>
+                                <strong>Respond with purpose</strong>
+                                <small>Turn signals into action.</small>
+                            </div>
+                        </div>
+                        <div class="about-principle">
+                            <span><i class="ti-rocket"></i></span>
+                            <div>
+                                <strong>Keep improving</strong>
+                                <small>Learn, build, repeat.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-bottom-row">
+                        <div class="about-quick-stats">
+                            <div>
+                                <strong>2+</strong>
+                                <span>Years in security</span>
+                            </div>
+                            <div>
+                                <strong>SC-200</strong>
+                                <span>Microsoft Certified</span>
+                            </div>
+                            <div>
+                                <strong>Top 2%</strong>
+                                <span>TryHackMe</span>
+                            </div>
+                        </div>
+
+                        <div class="cv-buttons about-cv-buttons">
+                            <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" target="_blank" class="about-cv-primary">
+                                <span>View CV</span>
+                                <i class="ti-arrow-top-right"></i>
+                            </a>
+                            <a href="Pavankumar_Khot_SOC_Analyst_Resume.pdf" download="Pavankumar's CV" class="about-cv-secondary">
+                                <i class="ti-download"></i>
+                                <span>Download</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end of premium about wrapper -->    
 
              </div>
 
         </div style ="width = auto"><!-- end of container -->
 
-                <!-- Profile badges ................................................................................. -->
-
+                <!-- Profile presence -->
                 <section class="cyber-profiles" id="profiles">
-                <div class="container">
-                    <div class="profile-grid">
-                    
-                    <!-- GitHub -->
-                    <div class="profile-card" id="github-card">
-                    </div>              
-
-                    <!-- LinkedIn -->
-                    <div class="profile-card"> 
-                        <div class="linkedin-badge">
-                        <div class="badge-base LI-profile-badge"
-                            data-locale="en_US" data-size="medium" data-theme="light"
-                            data-type="HORIZONTAL" data-vanity="pavankumar-khot-91a95b209"
-                            data-version="v1">
-                            <a class="badge-base__link LI-simple-link"
-                            href="https://in.linkedin.com/in/pavankumar-khot-91a95b209?trk=profile-badge">
-                            </a>
+                    <div class="container">
+                        <div class="profile-section-heading">
+                            <span class="profile-eyebrow">DIGITAL PRESENCE</span>
+                            <h3>Explore My Work</h3>
+                            <p>Code, hands-on security practice, and professional journey — all in one place.</p>
                         </div>
-                        </div>
-                        <a href="https://in.linkedin.com/in/pavankumar-khot-91a95b209" target="_blank" class="profile-link">View LinkedIn</a>
-                    </div>
 
-                    <!-- TryHackMe -->
-                    <div class="profile-card tryhackme-card">
-                        <div class="tryhackme-frame-container">
-                        <iframe 
-                            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=4452694"
-                            loading="lazy"
-                            class="badge-frame"
-                            scrolling="no">
-                        </iframe>
-                        </div>
-                        <p class="profile-desc">
-                        Hands-on threat hunting, red teaming, and cyber lab adventures to level up my defense skills.
-                        </p>
-                        <a href="https://tryhackme.com/p/PavankumarKhot" target="_blank" class="profile-link">View TryHackMe</a>
-                    </div>
+                        <div class="profile-grid">
 
+                            <!-- GitHub -->
+                            <article class="profile-card profile-card--github" id="github-card">
+                                <div class="profile-card-glow"></div>
+                                <div class="profile-card-top">
+                                    <div class="profile-icon profile-icon--github">
+                                        <i class="ti-github"></i>
+                                    </div>
+                                    <span class="profile-platform">GITHUB</span>
+                                    <span class="profile-arrow"><i class="ti-arrow-top-right"></i></span>
+                                </div>
+
+                                <div class="profile-card-main">
+                                    <div class="profile-avatar profile-avatar--github">
+                                        <i class="ti-github"></i>
+                                    </div>
+                                    <div class="profile-identity">
+                                        <h4>GitHub</h4>
+                                        <span>@ItsBenign-Pavan</span>
+                                    </div>
+                                </div>
+
+                                <p class="profile-desc">
+                                    Open-source experiments, security projects, automation tools, and technical work I build in my free time.
+                                </p>
+
+                                <div class="profile-stats">
+                                    <div><strong class="github-repos">—</strong><span>Public repos</span></div>
+                                    <div><strong>∞</strong><span>Ideas shipped</span></div>
+                                </div>
+
+                                <a href="https://github.com/ItsBenign-Pavan" target="_blank" rel="noopener noreferrer" class="profile-link">
+                                    <span>Explore GitHub</span><i class="ti-arrow-top-right"></i>
+                                </a>
+                            </article>
+
+                            <!-- LinkedIn -->
+                            <article class="profile-card profile-card--linkedin">
+                                <div class="profile-card-glow"></div>
+                                <div class="profile-card-top">
+                                    <div class="profile-icon profile-icon--linkedin">
+                                        <i class="ti-linkedin"></i>
+                                    </div>
+                                    <span class="profile-platform">LINKEDIN</span>
+                                    <span class="profile-arrow"><i class="ti-arrow-top-right"></i></span>
+                                </div>
+
+                                <div class="profile-card-main">
+                                    <div class="profile-avatar profile-avatar--linkedin">
+                                        <i class="ti-linkedin"></i>
+                                    </div>
+                                    <div class="profile-identity">
+                                        <h4>Professional Profile</h4>
+                                        <span>Pavankumar Khot</span>
+                                    </div>
+                                </div>
+
+                                <p class="profile-desc">
+                                    Career milestones, certifications, professional updates, and the journey behind the work.
+                                </p>
+
+                                <div class="profile-highlight">
+                                    <i class="ti-briefcase"></i>
+                                    <span>Cyber Security Consultant</span>
+                                </div>
+
+                                <a href="https://in.linkedin.com/in/pavankumar-khot-91a95b209" target="_blank" rel="noopener noreferrer" class="profile-link">
+                                    <span>View LinkedIn</span><i class="ti-arrow-top-right"></i>
+                                </a>
+                            </article>
+
+                            <!-- TryHackMe -->
+                            <article class="profile-card profile-card--tryhackme tryhackme-card">
+                                <div class="profile-card-glow"></div>
+                                <div class="profile-card-top">
+                                    <div class="profile-icon profile-icon--tryhackme">
+                                        <i class="ti-game"></i>
+                                    </div>
+                                    <span class="profile-platform">TRYHACKME</span>
+                                    <span class="profile-arrow"><i class="ti-arrow-top-right"></i></span>
+                                </div>
+
+                                <div class="profile-card-main">
+                                    <div class="profile-avatar profile-avatar--tryhackme">
+                                        <i class="ti-shield"></i>
+                                    </div>
+                                    <div class="profile-identity">
+                                        <h4>Hands-on Security</h4>
+                                        <span>@PavankumarKhot</span>
+                                    </div>
+                                </div>
+
+                                <p class="profile-desc">
+                                    Hands-on threat hunting, red teaming, and cyber lab challenges that keep my defensive skills sharp.
+                                </p>
+
+                                <div class="profile-highlight">
+                                    <i class="ti-medall-alt"></i>
+                                    <span>Top 2% on TryHackMe</span>
+                                </div>
+
+                                <a href="https://tryhackme.com/p/PavankumarKhot" target="_blank" rel="noopener noreferrer" class="profile-link">
+                                    <span>View TryHackMe</span><i class="ti-arrow-top-right"></i>
+                                </a>
+                            </article>
+
+                        </div>
                     </div>
-                </div>
                 </section>
 
-                <!-- LinkedIn Badge Script -->
-                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-                <!-- GitHub Data Fetch -->
                 <script>
+                /* GitHub profile data — preserves the existing live data behavior */
                 fetch('https://api.github.com/users/ItsBenign-Pavan')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('github-card').innerHTML += `
-                    <img src="${data.avatar_url}" width="90" style="border-radius:50%; margin-top:10px;">
-                    <h4 style="margin:8px 0;">${data.name}</h4>
-                    <p class="profile-desc">Open-source experiments, side projects, and automation tools I craft in my free time.</p>
-                    <p>Public Repos: ${data.public_repos}</p>
-                    <a href="${data.html_url}" target="_blank" class="profile-link">View GitHub</a>
-                    `;
-                });
+                    .then(response => response.json())
+                    .then(data => {
+                        const repoEl = document.querySelector('.github-repos');
+                        if (repoEl && typeof data.public_repos !== 'undefined') {
+                            repoEl.textContent = data.public_repos;
+                        }
+                    })
+                    .catch(() => {});
                 </script>
-
-                <!-- Font Awesome -->
-                <script src="https://kit.fontawesome.com/a2b5e6f3c1.js" crossorigin="anonymous"></script>
-
-                <!-- Profile badges ..................................................................................... -->
 
     </section> <!-- end of about section --> <hr>
 
 
 <!-- ===================== PROFESSIONAL RECOGNITION ===================== -->
 
-<section id="recognition" class="recognition-section">
+<section id="recognition" class="recognition-section recognition-showcase">
 
     <div class="recognition-container">
 
-        <!-- <h2 class="recognition-title">
-            Professional Recognition
-        </h2> -->
+        <div class="recognition-heading">
+            <div class="recognition-heading-copy">
+                <span class="recognition-eyebrow">
+                    <i class="fas fa-award"></i> PROFESSIONAL RECOGNITION
+                </span>
+                <h2>Work that got <span>noticed.</span></h2>
+                <p>
+                    Recognition earned through ownership, consistency and impact —
+                    not just the work delivered, but the way it was delivered.
+                </p>
+            </div>
 
-        <div class="recognition-slider">
+            <div class="recognition-heading-mark" aria-hidden="true">
+                <span>02</span>
+                <small>AWARDS</small>
+            </div>
+        </div>
 
-            <button class="slider-btn prev" id="prevRecognition">
-                <i class="fas fa-chevron-left"></i>
+        <div class="recognition-slider" aria-label="Professional recognition awards">
+
+            <button class="slider-btn prev" id="prevRecognition" type="button" aria-label="Previous award">
+                <i class="fas fa-arrow-left"></i>
             </button>
 
             <div class="recognition-track">
 
-                <!-- ================= Award 1 ================= -->
+                <!-- Award 1 -->
+                <article class="recognition-card recognition-award-card">
 
-                <div class="recognition-card">
+                    
 
                     <div class="recognition-body">
 
-                        <div class="recognition-badge">
-                            <img src="assets/imgs/Hi-Five Badge.png"
-                                 alt="Hi-Five Spot Award">
+                        <div class="recognition-badge-wrap">
+                            <div class="recognition-badge-orbit orbit-one"></div>
+                            <div class="recognition-badge-orbit orbit-two"></div>
+                            <div class="recognition-badge">
+                                <img src="assets/imgs/Hi-Five Badge.png" alt="Hi-Five Spot Award">
+                            </div>
                         </div>
 
                         <div class="recognition-details">
 
                             <span class="award-company">
-                                <i class="fas fa-trophy"></i>
-                                PROFESSIONAL RECOGNITION
+                                LTIMindtree <i class="fas fa-circle"></i> 2025
                             </span>
 
-                            <h3>
-                                Hi-Five Spot Award
-                            </h3>
+                            <h3>Hi-Five Spot Award</h3>
 
-                            <div class="award-meta">
-
-                                <span>LTIMindtree (LTM)</span>
-
-                                <span>•</span>
-
-                                <span>2025</span>
-
+                            <div class="award-project">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Microsoft Defender Experts (DEX)</span>
                             </div>
-
-                            <strong>Project:</strong> Microsoft Defender Experts (DEX)
-                       
-                            <br>
 
                             <div class="award-quote">
                                 <i class="fas fa-quote-left"></i>
                                 <span>
-                                    Honored with the Hi-Five Spot Award for taking strong initiative and consistently delivering tasks with impeccable accuracy and speed.
+                                    Recognized for taking strong initiative and consistently delivering
+                                    tasks with impeccable accuracy and speed.
+                                </span>
+                            </div>
+
+                            <div class="recognition-tags">
+                                <span>Initiative</span>
+                                <span>Accuracy</span>
+                                <span>Impact</span>
                             </div>
 
                         </div>
-
-                         <div class="recognition-footer">
-
-                        <a href="Hi-Five Award.pdf"
-                           target="_blank"
-                           class="cert-btn">
-
-                            <i class="fas fa-award"></i>
-
-                            View Certificate
-
-                        </a>
-
-                        </div>
-
-                    </div> 
-
-                   
-
-                </div>
-
-                <!-- ================= Award 2 ================= -->
-
-                <div class="recognition-card">
-
-                    <div class="recognition-body">
-
-                        <div class="recognition-badge">
-                            <img src="assets/imgs/Super Crew Badge.png"
-                                 alt="Super Crew Spot Award">
-                        </div>
-
-                        <div class="recognition-details">
-
-                            <span class="award-company">
-                                <i class="fas fa-trophy"></i>
-                                PROFESSIONAL RECOGNITION
-                            </span>
-
-                            <h3>
-                                Super Crew Spot Award
-                            </h3>
-
-                            <div class="award-meta">
-
-                                <span>LTIMindtree (LTM)</span>
-
-                                <span>•</span>
-
-                                <span>2026</span>
-
-                            </div>
-
-                            <strong>Project:</strong> Microsoft Defender Experts (DEX)
-                       
-                            <br>
-
-                            <div class="award-quote">
-                                <i class="fas fa-quote-left"></i>
-                                <span>
-                                    Honored with the Super Crew Spot Award for consistently going above and beyond in every responsibility.
-                            </div>
-
-                        </div>
-
-                        <div class="recognition-footer">
-
-                        <a href="Super Crew Award.pdf"
-                           target="_blank"
-                           class="cert-btn">
-
-                            <i class="fas fa-award"></i>
-
-                            View Certificate
-
-                        </a>
-
-                        </div>
-
                     </div>
 
+                    <div class="recognition-footer recognition-footer-stacked">
+    <div class="recognition-footer-note">
+                            <span class="recognition-footer-dot"></span>
+                            Professional Achievement
+                        </div>
+    <div class="recognition-footer-action">
+        <a href="Hi-Five Award.pdf" target="_blank" class="cert-btn">
+                            <span>View Certificate</span>
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+    </div>
+</div>
 
-                </div>
+                </article>
+
+                <!-- Award 2 -->
+                <article class="recognition-card recognition-award-card">
+
+                    
+
+                    <div class="recognition-body">
+
+                        <div class="recognition-badge-wrap">
+                            <div class="recognition-badge-orbit orbit-one"></div>
+                            <div class="recognition-badge-orbit orbit-two"></div>
+                            <div class="recognition-badge">
+                                <img src="assets/imgs/Super Crew Badge.png" alt="Super Crew Spot Award">
+                            </div>
+                        </div>
+
+                        <div class="recognition-details">
+
+                            <span class="award-company">
+                                LTIMindtree <i class="fas fa-circle"></i> 2026
+                            </span>
+
+                            <h3>Super Crew Spot Award</h3>
+
+                            <div class="award-project">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Microsoft Defender Experts (DEX)</span>
+                            </div>
+
+                            <div class="award-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <span>
+                                    Recognized for consistently going above and beyond in every
+                                    responsibility and contributing beyond expectations.
+                                </span>
+                            </div>
+
+                            <div class="recognition-tags">
+                                <span>Ownership</span>
+                                <span>Consistency</span>
+                                <span>Team Impact</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="recognition-footer recognition-footer-stacked">
+    <div class="recognition-footer-note">
+                            <span class="recognition-footer-dot"></span>
+                            Professional Achievement
+                        </div>
+    <div class="recognition-footer-action">
+        <a href="Super Crew Award.pdf" target="_blank" class="cert-btn">
+                            <span>View Certificate</span>
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+    </div>
+</div>
+
+                </article>
 
             </div>
 
-            <button class="slider-btn next" id="nextRecognition">
-                <i class="fas fa-chevron-right"></i>
+            <button class="slider-btn next" id="nextRecognition" type="button" aria-label="Next award">
+                <i class="fas fa-arrow-right"></i>
             </button>
 
         </div>
 
-        <div class="recognition-counter">
+        <div class="recognition-bottom">
+            <div class="recognition-counter">
+                <span id="currentRecognition">1</span>
+                <span class="counter-line"></span>
+                <span id="totalRecognition">2</span>
+            </div>
 
-            <span id="currentRecognition">1</span>
+            <div class="recognition-progress">
+                <span></span>
+            </div>
 
-            /
-
-            <span id="totalRecognition">2</span>
-
+            <span class="recognition-bottom-caption">Selected professional recognition</span>
         </div>
 
     </div>
@@ -420,343 +658,595 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
 </section>
 
     <!-- skills section -->
-    <section class="section" id="skills">
-        <div class="container text-center">
-            <p class="section-subtitle">What are my skills?</p>
-            <h6 class="section-title mb-6">Skills</h6>
-            
-            <div class="row"> <!-- row-1 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/networkfundamentals.svg" class="icon">
-                            <h6 class="title">Networking Nerd</h6>
-                            <p class="subtitle" style="justify-self:center;">Completing the 'Network Fundamentals' module <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/network-fundamentals" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/linux.svg" class="icon">
-                            <h6 class="title">Linux Fundamentals</h6> 
-                            <p class="subtitle" style="justify-self:center;">Being competent in Linux <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/terminaled" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/metasploit.svg" class="icon">
-                            <h6 class="title">Metasploitable</h6> 
-                            <p class="subtitle" style="justify-self:center;">Contains the knowledge to use Metasploit <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/metasploitable" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/hack2win.svg" class="icon">
-                            <h6 class="title">Raffle Royalty</h6> 
-                            <p class="subtitle" style="justify-self:center;">Participating in Hack2Win 2025! <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/raffle-royalty" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end of row-1 -->
-
-            <br> <br> 
-
-            <div class="row"> <!-- row-2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/owasptop10.svg" class="icon">
-                            <h6 class="title">OWASP Top 10</h6> 
-                            <p class="subtitle" style="justify-self:center;">Understanding every OWASP vulnerability <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/owasp-10" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/blue.svg" class="icon">
-                            <h6 class="title">Blue</h6> 
-                            <p class="subtitle" style="justify-self:center;">Hacking into Windows via EternalBlue <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/blue" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/soc-sim-100-percent-true-positive-rate.svg" class="icon">
-                            <h6 class="title">100% TP Rate</h6> 
-                            <p class="subtitle" style="justify-self:center;">Achieving 100% true positive rate in a scenario <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/soc-sim-100-percent-true-positive-rate" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/defensive-toolsmith.svg" class="icon">
-                            <h6 class="title">Defensive Toolsmith</h6> 
-                            <p class="subtitle" style="justify-self:center;">Mastered essential SOC tools for detection <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/defensive-toolsmith" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div><!-- end of row-2 -->
-
-            <br> <br> 
-
-            <div class="row"> <!-- row-3 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/wireshark.svg" class="icon">
-                            <h6 class="title">Wireshark</h6>
-                            <p class="subtitle" style="justify-self:center;">Competent with Wireshark & Packet Analysis <br><br> <a href="https://tryhackme.com/PavankumarKhot/badges/wireshark" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/vg" class="icon">
-                            <h6 class="title">On the way 😉</h6> 
-                            <p class="subtitle" style="justify-self:center;">.... <br><br> <a href="" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/vg" class="icon">
-                            <h6 class="title">On the way 😉</h6> 
-                            <p class="subtitle" style="justify-self:center;">.... <br><br> <a href="" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" id="BackToSkillVault">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/vg" class="icon">
-                            <h6 class="title">On the way 😉</h6> 
-                            <p class="subtitle" style="justify-self:center;">.... <br><br> <a href="" target="_blank" style="display: inline-block; padding: 5px 20px; background-color: #695aa6; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;"
-                                onmouseover="this.style.backgroundColor='#6f42c1';" 
-                                onmouseout="this.style.backgroundColor='#695aa6';"> Verify</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div><!-- end of row-3 -->
-            <br>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="pages/skills.html" class="btn btn-primary cert-btn">Skill Vault &nbsp; <i class="fa-solid fa-bolt"></i></a>
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="skills-heading text-center">
+                <p class="section-subtitle">What I Work With</p>
+                <h6 class="section-title mb-6">Skills</h6>
+                <p class="skills-intro">
+                    A focused toolkit built around security operations, detection engineering,
+                    endpoint defense, cloud security and hands-on investigation.
+                </p>
             </div>
 
+            <div class="skills-showcase" id="skillsShowcase">
+                <div class="skills-category-rail" role="tablist" aria-label="Skill categories">
+                    <button class="skill-category active" type="button" role="tab" aria-selected="true" data-skill="operations">
+                        <span class="skill-category-index">01</span>
+                        <span class="skill-category-copy">
+                            <strong>Security Operations</strong>
+                            <small>Monitor · Investigate · Respond</small>
+                        </span>
+                        <i class="ti-arrow-right"></i>
+                    </button>
+
+                    <button class="skill-category" type="button" role="tab" aria-selected="false" data-skill="detection">
+                        <span class="skill-category-index">02</span>
+                        <span class="skill-category-copy">
+                            <strong>Detection Engineering</strong>
+                            <small>Detect · Hunt · Engineer</small>
+                        </span>
+                        <i class="ti-arrow-right"></i>
+                    </button>
+
+                    <button class="skill-category" type="button" role="tab" aria-selected="false" data-skill="endpoint">
+                        <span class="skill-category-index">03</span>
+                        <span class="skill-category-copy">
+                            <strong>Endpoint Security</strong>
+                            <small>Protect · Analyze · Contain</small>
+                        </span>
+                        <i class="ti-arrow-right"></i>
+                    </button>
+
+                    <button class="skill-category" type="button" role="tab" aria-selected="false" data-skill="cloud">
+                        <span class="skill-category-index">04</span>
+                        <span class="skill-category-copy">
+                            <strong>Cloud &amp; Identity</strong>
+                            <small>Azure · Identity · Access</small>
+                        </span>
+                        <i class="ti-arrow-right"></i>
+                    </button>
+
+                    <button class="skill-category" type="button" role="tab" aria-selected="false" data-skill="tools">
+                        <span class="skill-category-index">05</span>
+                        <span class="skill-category-copy">
+                            <strong>Security Toolkit</strong>
+                            <small>Analyze · Automate · Validate</small>
+                        </span>
+                        <i class="ti-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="skills-detail-panel" aria-live="polite">
+                    <div class="skills-panel-glow"></div>
+                    <div class="skills-panel-topline">
+                        <div>
+                            <span class="skills-panel-kicker">01 / SECURITY OPERATIONS</span>
+                            <h3 id="skillPanelTitle">Security Operations</h3>
+                        </div>
+                        <div class="skills-panel-mark"><i class="ti-shield"></i></div>
+                    </div>
+
+                    <p class="skills-panel-description" id="skillPanelDescription">
+                        Security monitoring and incident handling across Microsoft security platforms,
+                        from alert triage through investigation and response.
+                    </p>
+
+                    <div class="skill-chip-grid" id="skillChipGrid"></div>
+
+                    <div class="skills-panel-footer">
+                        <span><i class="ti-check"></i> Hands-on experience</span>
+                        <span><i class="ti-pulse"></i> Continuously evolving</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-proof-row">
+                <div class="skills-proof-copy">
+                    <span class="skills-proof-kicker">HANDS-ON PROOF</span>
+                    <strong>Skills backed by practical labs &amp; security challenges</strong>
+                </div>
+                <div class="skills-proof-badges" aria-label="Hands-on security badges">
+                    <img src="assets/imgs/networkfundamentals.svg" alt="Network Fundamentals" loading="lazy">
+                    <img src="assets/imgs/linux.svg" alt="Linux Fundamentals" loading="lazy">
+                    <img src="assets/imgs/wireshark.svg" alt="Wireshark" loading="lazy">
+                    <img src="assets/imgs/defensive-toolsmith.svg" alt="Defensive Toolsmith" loading="lazy">
+                </div>
+                <a href="pages/skills.html" class="skills-vault-link">
+                    Skill Vault <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </section><!-- end of skills section --> <hr>
 
     <!-- portfolio section -->
-    <section class="section" id="workex">
-    <div class="container text-center">
-        <p class="section-subtitle">What I Did ?</p>
-        <h6 class="section-title mb-6">Professional Work Experience</h6>
+    <!-- professional work experience -->
+    <section class="section experience-section" id="workex">
+        <div class="container">
+            <div class="experience-heading text-center">
+                <p class="section-subtitle">Career Journey</p>
+                <h6 class="section-title mb-6">Professional Work Experience</h6>
+                <p class="experience-intro">
+                    Roles, responsibilities and the experience that shaped my career in technology and cybersecurity.
+                </p>
+            </div>
 
-        <div class="timeline-container">
-        
-        <!-- Current Role -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-            <h4 class="timeline-role">Endpoint Security Engineer (Threat Hunter)</h4>
-            <p class="timeline-company">LTIMindtree Limited — <i>Client: Microsoft DEX-E (Defender Experts for Endpoint)</i></p>
-            <p class="timeline-duration"><b>2024 – Present</b> (2 Years)</p>
-            <p class="timeline-desc">
-                Responsible for triaging endpoint security incidents, escalating high-severity threats,
-                and collaborating with Microsoft’s Defender Experts to enhance threat detection and response efficiency.
-            </p>
+            <div class="experience-timeline">
+
+                <!-- Current Role -->
+                <article class="experience-item experience-item--current">
+                    <div class="experience-marker">
+                        <span></span>
+                    </div>
+
+                    <div class="experience-date">
+                        <span class="experience-date-year">2024 — Present</span>
+                        <span class="experience-date-length">2+ Years</span>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-card-top">
+                            <div>
+                                <span class="experience-badge">Current Role</span>
+                                <h3>Endpoint Security Engineer <span>(Threat Hunter)</span></h3>
+                                <p class="experience-company">
+                                    LTIMindtree Limited
+                                    <span class="experience-separator">·</span>
+                                    Client: Microsoft DEX-E
+                                </p>
+                            </div>
+                            <div class="experience-status">
+                                <span class="experience-status-dot"></span>
+                                Present
+                            </div>
+                        </div>
+
+                        <p class="experience-description">
+                            Responsible for triaging endpoint security incidents, investigating suspicious activity,
+                            escalating high-severity threats and collaborating with Microsoft Defender Experts to
+                            improve threat detection and response efficiency.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>Microsoft Defender</span>
+                            <span>Threat Hunting</span>
+                            <span>KQL</span>
+                            <span>Incident Response</span>
+                            <span>MITRE ATT&CK</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cloud Intern -->
+                <article class="experience-item">
+                    <div class="experience-marker">
+                        <span></span>
+                    </div>
+
+                    <div class="experience-date">
+                        <span class="experience-date-year">Feb 2023 — May 2023</span>
+                        <span class="experience-date-length">4 Months</span>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-card-top">
+                            <div>
+                                <h3>Cloud Intern</h3>
+                                <p class="experience-company">LTIMindtree · Ignite'23 Program</p>
+                            </div>
+                        </div>
+
+                        <p class="experience-description">
+                            Gained hands-on experience with Terraform, AWS cloud services and automation scripting
+                            while contributing to internal cloud deployment and configuration activities.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>Terraform</span>
+                            <span>AWS</span>
+                            <span>Cloud</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Software Developer Intern -->
+                <article class="experience-item">
+                    <div class="experience-marker">
+                        <span></span>
+                    </div>
+
+                    <div class="experience-date">
+                        <span class="experience-date-year">May 2022 — Sep 2022</span>
+                        <span class="experience-date-length">5 Months</span>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-card-top">
+                            <div>
+                                <h3>Software Developer Intern</h3>
+                                <p class="experience-company">Kentropy Technologies Pvt. Ltd.</p>
+                            </div>
+                        </div>
+
+                        <p class="experience-description">
+                            Developed dynamic web components using JavaScript and JSP, collaborated with the QA team
+                            on Selenium testing and maintained development workflows using Git.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>JavaScript</span>
+                            <span>JSP</span>
+                            <span>Selenium</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Data Analyst Intern -->
+                <article class="experience-item">
+                    <div class="experience-marker">
+                        <span></span>
+                    </div>
+
+                    <div class="experience-date">
+                        <span class="experience-date-year">Jul 2021 — Oct 2021</span>
+                        <span class="experience-date-length">4 Months</span>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-card-top">
+                            <div>
+                                <h3>Data Analyst Intern</h3>
+                                <p class="experience-company">DevTown (ShapeAI)</p>
+                            </div>
+                        </div>
+
+                        <p class="experience-description">
+                            Worked on data visualization and machine learning tasks using Python, Pandas and OpenCV
+                            to analyze real-world datasets and generate actionable insights.
+                        </p>
+
+                        <div class="experience-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>OpenCV</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </div>
-
-        <!-- Previous Role 1 -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-            <h4 class="timeline-role">Cloud Intern</h4>
-            <p class="timeline-company">LTIMindtree (Ignite'23 Program)</p>
-            <p class="timeline-duration"><b>Feb 2023 – May 2023</b> (4 Months)</p>
-            <p class="timeline-desc">
-                Gained hands-on experience in Terraform, AWS Cloud Services, and automation scripting while contributing to 
-                internal cloud deployment and configuration projects.
-            </p>
-            </div>
-        </div>
-
-        <!-- Previous Role 2 -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-            <h4 class="timeline-role">Software Developer Intern</h4>
-            <p class="timeline-company">Kentropy Technologies Pvt. Ltd.</p>
-            <p class="timeline-duration"><b>May 2022 – Sep 2022</b> (8 Months)</p>
-            <p class="timeline-desc">
-                Developed dynamic web components using JavaScript and JSP; collaborated with the QA team 
-                for Selenium testing and version control via Git.
-            </p>
-            </div>
-        </div>
-
-        <!-- Previous Role 3 -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-            <h4 class="timeline-role">Data Analyst Intern</h4>
-            <p class="timeline-company">DevTown (ShapeAI)</p>
-            <p class="timeline-duration"><b>Jul 2021 – Oct 2021</b> (3 Months)</p>
-            <p class="timeline-desc">
-                Worked on data visualization and machine learning tasks using Python, Pandas, and OpenCV 
-                to analyze real-world datasets and generate actionable insights.
-            </p>
-            </div>
-        </div>
-
-        </div><!-- end of timeline container -->
-    </div><!-- end of container -->
     </section>
     <hr>
 
-    <!-- pricing section -->
-    <section class="section" id="projects">
-    <div class="container text-center">
-        <p class="section-subtitle">Where did I use my skill?</p>
-        <h6 class="section-title mb-6">Recent Projects</h6>
-
-        <div class="pricing-wrapper single-project" >
-        <div class="pricing-card full-width">
-            <div class="pricing-card-header dual-logos">
-            <img class="org-logo" src="assets/imgs/LTIMindtree_Logo.svg.png" alt="LTIMindtree Logo">
-            <span class="divider">-</span>
-            <img class="org-logo" src="assets/imgs/Microsoft_logo_(2012).svg.png" alt="Microsoft Logo">
+    <!-- projects section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="projects-heading text-center">
+                <p class="section-subtitle">Selected work</p>
+                <h6 class="section-title">Projects</h6>
+                <p class="projects-intro">
+                    A collection of professional experience and independent projects.
+                </p>
             </div>
 
-            <div class="pricing-card-body text-left">
-            <h4 class="pricing-card-title" style="font-size: xx-large;">Microsoft DEX-E (Defender Experts for Endpoint)</h4>
-            <p class="project-meta"><b>Organization:</b> LTIMindtree Limited — <i>Client: Microsoft</i></p>
-            <p class="project-duration"><b>Duration:</b> 2024 – Present (2 Years)</p> <hr>
+            <div class="projects-carousel" data-projects-carousel>
+                <div class="projects-viewport">
+                    <div class="projects-track">
 
-            <ul class="project-points">
-                <li>Investigated and responded to <b>10,000+ endpoint security incidents</b> and <b>500+ high-severity escalations</b>, improving threat detection and response efficiency.</li>
-                <li>Investigated and triaged high-severity incidents involving <b>info-stealers, credential theft, privilege escalation, and lateral movement.</b></li>
-                <li>Handled <b>targeted threat campaigns</b> (e.g., ClickFix), including exploitation attempts on server vulnerabilities such as <b>SharePoint RCE</b> and <b>WSUS spoofing.</b></li>
-                <li>Developed <b>KQL-based hunting queries</b> to track and monitor ongoing threats and targeted campaigns.</li>
-                <li>Investigated <b>Windows event logs</b> and mapped findings to <b>MITRE ATT&CK techniques</b>.</li>
-                <li>Conducted <b>knowledge transfer (KT) sessions</b> and shadowing for new team members, enhancing team productivity and reducing onboarding time.</li>
-            </ul>
+                        <!-- Project 01 -->
+                        <article class="project-slide project-slide--experience">
+                            <div class="project-slide-inner">
+                                <div class="project-slide-number">01</div>
+
+                                <div class="project-slide-visual project-slide-visual--microsoft">
+                                    <div class="project-brand-simple">
+                                        <img src="assets/imgs/LTIMindtree_Logo.svg.png" alt="LTIMindtree">
+                                        <span class="project-brand-x">×</span>
+                                        <img src="assets/imgs/Microsoft_logo_(2012).svg.png" alt="Microsoft">
+                                    </div>
+                                    <span class="project-visual-label">Professional Experience</span>
+                                </div>
+
+                                <div class="project-slide-content">
+                                    <p class="project-slide-eyebrow">LTIMindtree · Client: Microsoft</p>
+                                    <h3>Microsoft DEX-E</h3>
+                                    <p class="project-slide-description">
+                                        Endpoint security operations and threat hunting within Microsoft Defender Experts
+                                        for Endpoint, covering incident triage, high-severity escalations, targeted campaigns
+                                        and detection-focused investigations.
+                                    </p>
+
+                                    <div class="project-stat-row">
+                                        <div class="project-stat">
+                                            <strong>10K+</strong>
+                                            <span>Incidents</span>
+                                        </div>
+                                        <div class="project-stat">
+                                            <strong>500+</strong>
+                                            <span>High-severity escalations</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-tags">
+                                        <span>Defender XDR</span>
+                                        <span>KQL</span>
+                                        <span>Threat Hunting</span>
+                                        <span>MITRE ATT&CK</span>
+                                    </div>
+
+                                    <a href="#workex" class="project-slide-action">
+                                        View Experience <i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 02 -->
+                        <article class="project-slide project-slide--personal">
+                            <div class="project-slide-inner">
+                                <div class="project-slide-number">02</div>
+
+                                <div class="project-slide-visual project-slide-visual--azure">
+                                    <div class="azure-brand-simple" aria-label="Azure security technologies">
+                                        <div class="azure-brand-main">
+                                            <span class="azure-wordmark">Azure</span>
+                                        </div>
+                                        <div class="azure-brand-tools">
+                                            <span>Microsoft Sentinel</span>
+                                            <span>Defender XDR</span>
+                                            <span>KQL</span>
+                                            <span>Sysmon</span>
+                                        </div>
+                                    </div>
+                                    <span class="project-visual-label">Personal Project</span>
+                                </div>
+
+                                <div class="project-slide-content">
+                                    <p class="project-slide-eyebrow">Independent Security Engineering Project</p>
+                                    <h3>Azure SOC Simulation</h3>
+                                    <p class="project-slide-description">
+                                        An end-to-end Azure security operations environment built to practice detection
+                                        engineering, threat hunting, incident investigation, attack simulation and
+                                        security operations workflows.
+                                    </p>
+
+                                    <div class="project-stat-row">
+                                        <div class="project-stat">
+                                            <strong>18</strong>
+                                            <span>Modules</span>
+                                        </div>
+                                        <div class="project-stat">
+                                            <strong>5</strong>
+                                            <span>Attack simulations</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-tags">
+                                        <span>Sentinel</span>
+                                        <span>Defender XDR</span>
+                                        <span>KQL</span>
+                                        <span>Sigma</span>
+                                        <span>Sysmon</span>
+                                        <span>MITRE ATT&CK</span>
+                                    </div>
+
+                                    <a href="https://itsbenign-pavan.github.io/Azure-SOC-Portfolio-L2/"
+                                       target="_blank" rel="noopener noreferrer" class="project-slide-action">
+                                        Explore Project <i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button class="project-carousel-btn project-carousel-btn--prev"
+                        type="button" aria-label="Previous project" data-project-prev>
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="project-carousel-btn project-carousel-btn--next"
+                        type="button" aria-label="Next project" data-project-next>
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+
+                <div class="project-carousel-footer">
+                    <div class="project-carousel-dots" role="tablist" aria-label="Projects">
+                        <button type="button" class="project-dot is-active" data-project-dot="0"
+                                aria-label="Show project 1" aria-selected="true"></button>
+                        <button type="button" class="project-dot" data-project-dot="1"
+                                aria-label="Show project 2" aria-selected="false"></button>
+                    </div>
+                    <span class="project-carousel-count">
+                        <span data-project-current>01</span> / <span data-project-total>02</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Certification Section -->
+    <section class="section certification-section" id="certification">
+    <div class="container">
+        <div class="certification-heading text-center">
+            <p class="section-subtitle">Credentials &amp; Learning</p>
+            <h6 class="section-title mb-6">Certifications</h6>
+            <p class="certification-intro">
+                Professional certifications that validate my hands-on skills and continuous learning.
+            </p>
+        </div>
+
+        <!-- Featured Certification - 1 -->
+        <article class="cert-featured">
+            <div class="cert-featured-glow"></div>
+
+            <div class="cert-featured-brand">
+                <div class="cert-microsoft-mark">
+                    <img src="assets/imgs/Microsoft_logo_(2012).svg.png" alt="Microsoft">
+                </div>
+                <span class="cert-featured-label">MICROSOFT CERTIFIED</span>
             </div>
 
-            <div class="recognition-ribbon">
-                <span class="ribbon-text">and the performance that truly stood out 😎....</span>
+            <div class="cert-featured-content">
+                <div class="cert-featured-topline">
+                    <span class="cert-status">
+                        <span></span>
+                        Earned
+                    </span>
+                    <span class="cert-code">SC-200</span>
+                </div>
 
-                <a href="#recognition" class="ribbon-btn">
-                    <i class="fa-solid fa-award"></i>
-                    View Recognition
+                <h3>Microsoft Certified: Security Operations Analyst Associate (SC-200)</h3>
+
+                <p class="cert-featured-description">
+                    Validates skills in security operations, incident response, threat hunting,
+                    Microsoft Sentinel, Microsoft Defender XDR and KQL.
+                </p>
+
+                <div class="cert-featured-meta">
+                    <span><strong>Issuer</strong> Microsoft</span>
+                    <span><strong>Exam</strong> SC-200</span>
+                    <span><strong>Level</strong> Associate</span>
+                </div>
+
+                <div class="cert-featured-tags">
+                    <span>Microsoft Sentinel</span>
+                    <span>Defender XDR</span>
+                    <span>KQL</span>
+                    <span>Threat Hunting</span>
+                </div>
+            </div>
+
+            <div class="cert-featured-action">
+                <a href="https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="cert-view-btn">
+                    <span>View Certification</span>
+                    <i class="ti-arrow-top-right"></i>
                 </a>
+                <span class="cert-featured-note">Microsoft Learn</span>
             </div>
-        </div>
-        </div><!-- end of pricing wrapper -->
-    </div><!-- end of container -->
-    </section><!-- end of pricing section --> <hr>
+        </article>
 
- 
-     <!-- Certification Section -->
-    <section class="section" id="certification">
-    <div class="container text-center">
-        <p class="section-subtitle">Recent achievements?</p>
-        <h6 class="section-title mb-6">Certifications</h6>
+        <!-- Featured Certification - 2 -->
+        <article class="cert-featured">
+            <div class="cert-featured-glow"></div>
 
-         <!-- Certification Card 1 -->
-        <div class="cert-card">
-        <img src="assets/imgs/tryhackme_logo.png" alt="AWS Logo" class="cert-logo">
-        <div class="cert-info">
-            <h5 class="cert-title">SOC Level 1</h5>
-            <p><b>Issued By:</b> TryHackme</p>
-            <p><b>Issued On:</b> Jan 2026</p>
-        </div>
-        <a href="https://tryhackme.com/certificate/THM-3DBF0TSDAN" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
-        </div>
+            <div class="cert-featured-brand">
+                <div class="cert-microsoft-mark">
+                    <img src="assets/imgs/palo-alto-networks-inc-logo-vector.svg" alt="Microsoft">
+                </div>
+                <span class="cert-featured-label">PALO ALTO CERTIFIED</span>
+            </div>
 
-         <!-- Certification Card 2 -->
-        <div class="cert-card">
-        <img src="assets/imgs/tryhackme_logo.png" alt="AWS Logo" class="cert-logo">
-        <div class="cert-info">
-            <h5 class="cert-title">Cyber Security 101</h5>
-            <p><b>Issued By:</b> TryHackme</p>
-            <p><b>Issued On:</b> Nov 2025</p>
-        </div>
-        <a href="https://tryhackme.com/certificate/THM-HZQDRGCIIC" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
-        </div>
+            <div class="cert-featured-content">
+                <div class="cert-featured-topline">
+                    <span class="cert-status">
+                        <span></span>
+                        Earned
+                    </span>
+                    <span class="cert-code">PCCP</span>
+                </div>
 
-         <!-- Certification Card 3 -->
-        <div class="cert-card">
-        <img src="assets/imgs/tryhackme_logo.png" alt="AWS Logo" class="cert-logo">
-        <div class="cert-info">
-            <h5 class="cert-title">Pre Security</h5>
-            <p><b>Issued By:</b> TryHackme</p>
-            <p><b>Issued On:</b> Sept 2025</p>
-        </div>
-        <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-3Y7CM5UMEW.pdf" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
-        </div>
+                <h3>Palo Alto Certified Cybersecurity Practitioner (PCCP) </h3>
 
+                <p class="cert-featured-description">
+                    Validates skills in network security, cloud defense, endpoint protection, and security operations using Palo Alto Networks NGFWs, Cortex XDR, and Prisma Cloud. 
+                </p>
 
-        <!-- Certification Card 4 -->
-        <div class="cert-card">
-        <img src="assets/imgs/awslogo.png" alt="AWS Logo" class="cert-logo">
-        <div class="cert-info">
-            <h5 class="cert-title">AWS Cloud Technical Essentials</h5>
-            <p><b>Issued By:</b> Coursera | AWS</p>
-            <p><b>Issued On:</b> July 2023</p>
+                <div class="cert-featured-meta">
+                    <span><strong>Issuer</strong> Palo Alto Networks </span>
+                    <span><strong>Certificate</strong> PCCP</span>
+                    <span><strong>Level</strong> Foundational</span>
+                </div>
+
+                <div class="cert-featured-tags">
+                    <span>Network Security</span>
+                    <span>Cloud Security</span>
+                    <span>Endpoint Protection</span>
+                    <span>Security Operations (SecOps)</span>
+                </div>
+            </div>
+
+            <div class="cert-featured-action">
+                <a href="https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="cert-view-btn">
+                    <span>View Certification</span>
+                    <i class="ti-arrow-top-right"></i>
+                </a>
+                <span class="cert-featured-note">Google Drive</span>
+            </div>
+        </article>
+
+        <!-- Other Certifications -->
+        <div class="cert-grid">
+
+            <article class="cert-card cert-card-modern">
+                <div class="cert-card-icon">
+                    <img src="assets/imgs/tryhackme_logo.png" alt="TryHackMe">
+                </div>
+                <div class="cert-info">
+                    <span class="cert-small-label">TryHackMe</span>
+                    <h5 class="cert-title">SOC Level 1</h5>
+                    <p><b>Issued:</b> Jan 2026</p>
+                </div>
+                <a href="https://tryhackme.com/certificate/THM-3DBF0TSDAN"
+                   target="_blank" rel="noopener noreferrer"
+                   class="cert-btn-modern">View <i class="ti-arrow-top-right"></i></a>
+            </article>
+
+            <article class="cert-card cert-card-modern">
+                <div class="cert-card-icon">
+                    <img src="assets/imgs/tryhackme_logo.png" alt="TryHackMe">
+                </div>
+                <div class="cert-info">
+                    <span class="cert-small-label">TryHackMe</span>
+                    <h5 class="cert-title">Cyber Security 101</h5>
+                    <p><b>Issued:</b> Nov 2025</p>
+                </div>
+                <a href="https://tryhackme.com/certificate/THM-HZQDRGCIIC"
+                   target="_blank" rel="noopener noreferrer"
+                   class="cert-btn-modern">View <i class="ti-arrow-top-right"></i></a>
+            </article>
+
+            <article class="cert-card cert-card-modern">
+                <div class="cert-card-icon">
+                    <img src="assets/imgs/tryhackme_logo.png" alt="TryHackMe">
+                </div>
+                <div class="cert-info">
+                    <span class="cert-small-label">TryHackMe</span>
+                    <h5 class="cert-title">Pre Security</h5>
+                    <p><b>Issued:</b> Sept 2025</p>
+                </div>
+                <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-3Y7CM5UMEW.pdf"
+                   target="_blank" rel="noopener noreferrer"
+                   class="cert-btn-modern">View <i class="ti-arrow-top-right"></i></a>
+            </article>
+
+            <article class="cert-card cert-card-modern">
+                <div class="cert-card-icon cert-card-icon--aws">
+                    <img src="assets/imgs/awslogo.png" alt="AWS">
+                </div>
+                <div class="cert-info">
+                    <span class="cert-small-label">Coursera · AWS</span>
+                    <h5 class="cert-title">AWS Cloud Technical Essentials</h5>
+                    <p><b>Issued:</b> July 2023</p>
+                </div>
+                <a href="https://www.coursera.org/account/accomplishments/verify/D9XFQLFPVWT4"
+                   target="_blank" rel="noopener noreferrer"
+                   class="cert-btn-modern">View <i class="ti-arrow-top-right"></i></a>
+            </article>
+
         </div>
-        <a href="https://www.coursera.org/account/accomplishments/verify/D9XFQLFPVWT4" target="_blank" class="btn btn-primary cert-btn">View Certificate</a>
-        </div>
-
-
     </div>
-    </section> <hr>
+</section> <hr>
         
         <!-- <a href="#top" class="topBtn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a> -->
         <!-- Scroll to Top Button -->
@@ -788,6 +1278,7 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script src="assets/js/skills.js"></script>
 
     <!-- Scroll up button script -->
     <script>
@@ -802,26 +1293,30 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
         });
     </script>
 
-    <!-- Hire me pop-up script -->
+    <!-- Hire Me interaction -->
     <script>
-        document.getElementById('hireBtn').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('contactPopup').classList.toggle('active');
-        });
-
-        document.getElementById('closePopup').addEventListener('click', function() {
-        document.getElementById('contactPopup').classList.remove('active');
-        });
-
-        window.addEventListener('click', function(e) {
-        const popup = document.getElementById('contactPopup');
-        const button = document.getElementById('hireBtn');
-        if (!popup.contains(e.target) && !button.contains(e.target)) {
-            popup.classList.remove('active');
-        }
-        });
+        (function () {
+            const hireBtn = document.getElementById('hireBtn');
+            const hireExperience = document.getElementById('hireExperience');
+            const closeHire = document.getElementById('closeHire');
+            if (!hireBtn || !hireExperience) return;
+            const openHire = () => {
+                hireExperience.classList.add('active');
+                hireExperience.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            };
+            const close = () => {
+                hireExperience.classList.remove('active');
+                hireExperience.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            };
+            hireBtn.addEventListener('click', e => { e.preventDefault(); openHire(); });
+            closeHire?.addEventListener('click', close);
+            hireExperience.addEventListener('click', e => { if (e.target === hireExperience) close(); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape' && hireExperience.classList.contains('active')) close(); });
+        })();
     </script>
- 
+
      <!-- show more button script -->
     <script>
         const showMoreBtn = document.getElementById("showMoreBtn");
@@ -842,32 +1337,48 @@ Passionate about staying ahead of emerging threats, I combine technical expertis
 
 
     <!-- /////////////////////////////////////////// experiment below .////////////////////////////////////////// -->
+    <!-- Portfolio security scan notification -->
+    <div id="cyberToast" class="cyber-toast" role="status" aria-live="polite">
 
-    <div id="cyberToast" class="cyber-toast">
+        <div class="toast-scan-line"></div>
 
         <div class="toast-icon">
+            <span class="toast-icon-ring"></span>
             <i class="fas fa-shield-alt"></i>
+            <span class="toast-pulse"></span>
         </div>
 
         <div class="toast-content">
+            <div class="toast-topline">
+                <span class="toast-status-dot"></span>
+                <span class="toast-status">SYSTEM CHECK</span>
+                <span class="toast-time">JUST NOW</span>
+            </div>
 
             <div class="toast-title">
                 Portfolio Scan Complete
             </div>
 
             <div class="toast-message">
-                Nothing suspicious here.....
-                Except an unhealthy obsession with cybersecurity 😄
+                Nothing suspicious here... <br> Except an unhealthy obsession with cybersecurity <span class="toast-emoji">😄</span>
             </div>
-
         </div>
 
-        <button class="toast-close" id="toastClose">
+        <button class="toast-close" id="toastClose" aria-label="Close notification">
             <i class="fas fa-times"></i>
         </button>
 
+        <div class="toast-progress" aria-hidden="true">
+            <span></span>
+        </div>
+
     </div>
 
+    <script src="assets/js/projects.js" defer></script>
+    <script src="assets/js/experience.js" defer></script>
+    <script src="assets/js/landing.js" defer></script>
+    <script src="assets/js/profile-cards.js"></script>
+    <script src="assets/js/cyber-toast.js" defer></script>
 </body>
 </html>
 
